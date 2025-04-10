@@ -224,7 +224,9 @@ Future<void> StoreSensor()async {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(context,MaterialPageRoute(builder: (context) =>AdminProfile(user:user ,)));
+                  //Navigator.push(context,MaterialPageRoute(builder: (context) =>AdminProfile(user:user ,)));
+                  Navigator.pop(context);
+                  Navigator.pop(context);
                 },
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),

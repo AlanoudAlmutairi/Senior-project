@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:senior_project_axajah/Admin_addSensor.dart';
 import 'package:senior_project_axajah/Auth_services.dart';
 import 'package:senior_project_axajah/Log_in.dart';
 import 'package:senior_project_axajah/dashboard.dart';
@@ -79,6 +80,7 @@ class _SensorSectionState extends State<SensorSection> {
 
   @override
   Widget build(BuildContext context) {
+     final  User user = widget.currentUser ;
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       child: Padding(
@@ -98,16 +100,43 @@ class _SensorSectionState extends State<SensorSection> {
                   ),
                   SizedBox(height: 10),
                   Expanded(
-                    child: sensors.isEmpty
-                        ? Center(
-                            child: Text(
-                              'No sensors ',
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.grey[600],
+                     child: sensors.isEmpty
+                      ? Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'No sensors',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  //color: Colors.grey[600],
+                                  color: Colors.black ,
+                                ),
                               ),
-                            ),
-                          )
+                              SizedBox(height: 8),
+                              Text('Please take your sensor information from your admin , then add the sensor from '),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => admin_addSensor(user: user),
+                                    ),
+                                  );
+                                },
+                                child: Text(
+                                  'HERE',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color.fromARGB(209, 71, 102, 59),
+                                    decoration: TextDecoration.underline,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                            
                         : ListView.separated(
                             itemCount: sensors.length,
                             itemBuilder: (context, index) {

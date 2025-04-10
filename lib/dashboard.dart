@@ -65,7 +65,7 @@ class _DashboardState extends State<Dashboard> {
               _co2WarningShown = false;
               _isWarningDialogVisible = false;
               if (Navigator.canPop(context)) {
-                Navigator.pop(context); // إغلاق التحذير تلقائياً
+                Navigator.pop(context); 
               }
             }
         });

@@ -11,9 +11,16 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 
 
-class AdminProfile extends StatelessWidget {
-    late final  User user  ;
-  AdminProfile({ required this.user});
+class AdminProfile extends StatefulWidget {
+  final User user;
+
+  AdminProfile({required this.user});
+
+  @override
+  _AdminProfileState createState() => _AdminProfileState();
+}
+
+class _AdminProfileState extends State<AdminProfile> {
 
 
   @override
@@ -24,7 +31,7 @@ class AdminProfile extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      drawer: Sidebar(current_user: user, ),
+      drawer: Sidebar(current_user: widget.user, ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -32,14 +39,15 @@ class AdminProfile extends StatelessWidget {
           children: [
            
             SizedBox(height: 20),
-            Expanded(child: SensorSection(user: user,)), // make scrollable if needed
+            Expanded(child: SensorSection(user: widget.user,)), // make scrollable if needed
               SizedBox(height: 20),
-            Expanded(child: UsersSection(user: user,)), // make scrollable if needed
+            Expanded(child: UsersSection(user: widget.user,)), // make scrollable if needed
           ],
         ),
       ),
     );
   }
+
 }
 
 class SensorSection extends StatefulWidget {
@@ -287,11 +295,8 @@ class UserTile extends StatelessWidget {
       trailing:  IconButton(
               icon: Icon(Icons.edit,  color: Color.fromARGB(209, 71, 102, 59),),
               onPressed: () {
-                 Navigator.pushReplacement(
-                        context, 
-                        MaterialPageRoute(builder: (context) =>admin_EditUser(selectedUserID: userList["user_id"], user: user)),
-                        
-  );
+               //  Navigator.pushReplacement( context, MaterialPageRoute(builder: (context) =>admin_EditUser(selectedUserID: userList["user_id"], user: user)),);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => admin_editUser(userList["user_id"], user)), );
               },
             ),
     );
@@ -466,4 +471,3 @@ class _SidebarState extends State<Sidebar> {
     );
   }
 }
-
