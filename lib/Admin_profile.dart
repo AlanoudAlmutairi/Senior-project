@@ -4,7 +4,6 @@ import 'package:senior_project_axajah/Admin_editSensor.dart';
 import 'package:senior_project_axajah/Admin_editUser.dart';
 import 'package:senior_project_axajah/Auth_services.dart';
 import 'package:senior_project_axajah/Log_in.dart';
-import 'package:senior_project_axajah/Temp_profile.dart';
 import 'package:senior_project_axajah/dashboard.dart';
 import 'package:senior_project_axajah/generate_Report.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -192,9 +191,7 @@ class _UsersSectionState extends State<UsersSection> {
   void initState() {
     super.initState();
      userID = widget.user.id;
-    fetchSensors();
-    print("sensors :: $sensors");
-  
+    fetchSensors();  
   }
  
   List<Map<String, dynamic>> usersList = [];

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:senior_project_axajah/Admin_addSensor.dart';
 import 'package:senior_project_axajah/Admin_profile.dart';
 import 'package:senior_project_axajah/Auth_services.dart';
-import 'package:senior_project_axajah/firstAccess.dart';
+import 'package:senior_project_axajah/Main.dart';
 import 'package:senior_project_axajah/user_profile.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:senior_project_axajah/Log_in.dart';
@@ -216,7 +216,6 @@ Future<User> signUp(String role)async{
   username = username_controller.text;
   email = email_controller.text;
   password = PW_controller.text;
-  //role = _isAdmin ? "Admin" : _isUser ? "User" : "None";
 
   try{
     var response = await authService.signUpWithPW( email, password);

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_project_axajah/Admin_addSensor.dart';
 import 'package:senior_project_axajah/Log_in.dart';
-import 'package:senior_project_axajah/Temp_profile.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 

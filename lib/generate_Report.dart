@@ -394,8 +394,7 @@ String ? locationName = null  ;
   if (name != null && name.isNotEmpty ) {
   locationName = name[0]["Room name"].toString();
 } else {
-  // Handle the case where the location name is not found
-  locationName = "Unknown Location"; // or any default value
+  locationName = "Unknown Location"; 
 } 
   return locationName; 
 }

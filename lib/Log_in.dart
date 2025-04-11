@@ -2,30 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:senior_project_axajah/Admin_addSensor.dart';
 import 'package:senior_project_axajah/Admin_profile.dart';
 import 'package:senior_project_axajah/Auth_services.dart';
-import 'package:senior_project_axajah/firstAccess.dart';
+import 'package:senior_project_axajah/Main.dart';
 import  'package:senior_project_axajah/signUp.dart';
 import 'package:senior_project_axajah/user_profile.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
-
-  await Supabase.initialize(
-    url: "https://khexdrhpnxwlpulyaqbk.supabase.co",
-    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoZXhkcmhwbnh3bHB1bHlhcWJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDEyOTA0NDQsImV4cCI6MjA1Njg2NjQ0NH0.lGQmtVMiAnEXQJvSL_8SQMaM5eGrNOg8_nqzuk1sHkA",
-  );
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Login(),
-    );
-  }
-}
 
 class Login extends StatefulWidget {
   @override
@@ -33,7 +14,6 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  bool _rememberMe = false;
   bool _obscurePassword = true;
   String role ="";
   //Text controllers 
@@ -86,29 +66,7 @@ class _LoginState extends State<Login> {
             // Remember Me & Forgot Password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Checkbox(
-                      value: _rememberMe,
-                      activeColor: Color(0xFF4F6A47), // Green check color
-                      onChanged: (value) {
-                        setState(() {
-                          _rememberMe = value!;
-                        });
-                      },
-                    ),
-                    Text("Remember me"),
-                  ],
-                ),
-                TextButton(
-                  onPressed: () {
-                    // Forgot password action
-                  },
-                  child: Text("Forgot password?",
-                      style: TextStyle(color: Colors.black87)),
-                ),
-              ],
+             
             ),
 
             SizedBox(height: 30),
@@ -123,7 +81,7 @@ class _LoginState extends State<Login> {
                 
                      },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF4F6A47), // Greenish button color
+                  backgroundColor: Color(0xFF4F6A47),
                   foregroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 120, vertical: 12),
                   shape: RoundedRectangleBorder(
@@ -137,19 +95,6 @@ class _LoginState extends State<Login> {
             SizedBox(height:70),
 
             SizedBox(height: 30),
-
-            // Social Login Buttons
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                //_buildSocialButton("Facebook", Icons.facebook, Colors.blue),
-                //SizedBox(width: 10),
-                //_buildSocialButton("Google", Icons.g_mobiledata, Colors.red),
-              ],
-            ),
-
-            //SizedBox(height: 80),
-
             // Signup Prompt
             Center(
               child: RichText(
@@ -167,7 +112,7 @@ class _LoginState extends State<Login> {
                         child: Text(
                           "Sign up",
                           style: TextStyle(
-                            color: Color(0xFF4F6A47), // Greenish color
+                            color: Color(0xFF4F6A47), 
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -250,7 +195,6 @@ void login()async{
       final userID = user.id;  
       final response2 = await Supabase.instance.client.from("Users").select('"user_id","User permission"').eq("user_id", userID);
        role = response2[0]["User permission"];
-      //  print("(1)$userID + $role");
        if(role == "Admin"){
          Navigator.push(context,MaterialPageRoute(builder: (context) => AdminProfile(user: user)) );
         }
