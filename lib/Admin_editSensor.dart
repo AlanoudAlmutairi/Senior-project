@@ -9,11 +9,11 @@ class admin_editSensor extends StatefulWidget  {
     admin_editSensor({required this.selectedSensor , required this.user});
 
     @override
-  _AdminEditSensorState createState() => _AdminEditSensorState();
+  AdminEditSensorState createState() => AdminEditSensorState();
 }
 
 
-class _AdminEditSensorState extends State<admin_editSensor> {
+class AdminEditSensorState extends State<admin_editSensor> {
 
 //var to store data that retreived fro db 
    late String roomName ;
@@ -117,15 +117,18 @@ SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     deletSensor();
-                    showSuccessDialog(context , "Sensor deleted" , widget.user );
+                    showSuccessDialog(context , "Sensor deleted" ,Icons.check_circle , Colors.green , widget.user);
                   },
                   child: Text('Delete'),
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                 updateValues();
-                 showSuccessDialog(context , "Changes saved" , widget.user );
+                  onPressed: ()async {
+                 String message =await updateValues();
+                 if(message.contains("successfully")){
+                                      showSuccessDialog(context , message ,Icons.check_circle , Colors.green , widget.user);
+                 }else 
+                 showSuccessDialog(context , message , Icons.warning_amber_rounded, Colors.red, widget.user);
                   
                   },
                   child: Text('Save'),
@@ -182,9 +185,8 @@ SizedBox(height: 20),
 
  Future<String> getRoomName() async {
   String room ="" ;
- // room = await Supabase.instance.client.from("Sensors").select('Room name').eq('Sensor id',selectedSensor );
-final  response = await Supabase.instance.client.from("Sensors").select('"Sensor id" , "Room name" ').eq("Sensor id", widget.selectedSensor);
-
+final  response = await Supabase.instance.client.from("Sensors")
+.select('"Sensor id" , "Room name" ').eq("Sensor id", widget.selectedSensor);
   if (response != null ) {
   room = response[0]["Room name"].toString();}
 
@@ -202,7 +204,8 @@ return response as List ;
 }
 
 
-Future <void> updateValues()async {
+Future <String> updateValues()async {
+  String message ; 
 try{
   final room = await Supabase.instance.client.from("Sensors").select('"Sensor id" ,"Room name" ').eq("Sensor id", widget.selectedSensor);
 
@@ -214,9 +217,11 @@ try{
   }).eq("Location name", room[0]["Room name"]);
 
 await Supabase.instance.client.from("Sensors").update({"Room name" : roomNameController.text}).eq("Sensor id", widget.selectedSensor);
+return message = "Sensor are updated successfully. ";
 
 }catch(e){
-  print(e);
+  return message = "There is an error updating the sensor data." ;
+  
 }
 }
 Future<void> deletSensor() async{
@@ -226,7 +231,7 @@ final room = await Supabase.instance.client.from("Sensors").select('"Sensor id" 
 }
 
 
-void showSuccessDialog(BuildContext context , String msg , User user ) {
+void showSuccessDialog(BuildContext context , String msg , IconData iconName , Color iconColor , User user) { {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -237,7 +242,7 @@ void showSuccessDialog(BuildContext context , String msg , User user ) {
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.check_circle, size: 50, color: Colors.green ),
+              Icon(iconName, size: 50, color: iconColor ),
               SizedBox(height: 10),
               Text(
                 msg,
@@ -269,4 +274,5 @@ void showSuccessDialog(BuildContext context , String msg , User user ) {
       },
     );
   }
+}
 }

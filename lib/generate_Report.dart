@@ -17,10 +17,10 @@ class GenerateReportScreen extends StatefulWidget {
     GenerateReportScreen(this.user); 
 
   @override
-  _GenerateReportScreenState createState() => _GenerateReportScreenState();
+  GenerateReportScreenState createState() => GenerateReportScreenState();
 }
 
-class _GenerateReportScreenState extends State<GenerateReportScreen> {
+class GenerateReportScreenState extends State<GenerateReportScreen> {
   // Ensure the initial value is from the list
   String selectedSensor =" "; 
   String selectedDuration = "Last 24 hours";
@@ -176,26 +176,22 @@ class _GenerateReportScreenState extends State<GenerateReportScreen> {
     );
   }
 
-DateTime getDateRange(String selectedDuration){
+ DateTime getDateRange(String selectedDuration){
 
   switch (selectedDuration) {
     case "Last 24 hours":
       startDate = nowDate.subtract(Duration(hours: 24));
-       print ("24");
       break;
   
     case "Last week":
       startDate = nowDate.subtract(Duration(days: 6) ) ;
-      print("week");
       break; 
       
     case "Last month":
       startDate = DateTime(nowDate.year, nowDate.month - 1, nowDate.day);
-      print("month");
       break;
     case "Last year":
       startDate = DateTime(nowDate.year-1, nowDate.month, nowDate.day); 
-      print("year"); 
       break;
   }
   return  startDate;
@@ -297,21 +293,18 @@ Future<void> generateReport() async {
                   
                   ),
               ],),
-        ] );
-      },
+        ] );   },
 
        
-      build: (pw.Context context) => [
-      
+      build: (pw.Context context) => [      
         pw.SizedBox(height: 30),
 
-        // Table with dynamic text colors
          if (readings.isEmpty)
     pw.Center(
       child: pw.Text(
-        'No data available for this sensor during the selected period.\n OR \n there is NOT sensors assigned to your account. ',
-        style: pw.TextStyle(fontSize: 14, color: PdfColors.red),
-      ),
+        'No data available for this sensor during the selected period.\n'
+        ' OR \n there is NOT sensors assigned to your account. ',
+        style: pw.TextStyle(fontSize: 14, color: PdfColors.red),),
     )
   else
         pw.Table(
@@ -330,13 +323,15 @@ Future<void> generateReport() async {
 
             // Loop through readings List
             ...readings.map((reading) {
-              PdfColor rowColor = PdfColors.black; // Default text color
+              PdfColor rowColor = PdfColors.black;
 
-             
-              if (reading["CO2"] != null && reading["CO2"] > 1000) {
-                rowColor = PdfColors.red; // High CO2 (Red)
+             if(reading["CO2"] != null && reading["CO2"] > 2000 ){
+              rowColor = PdfColors.red; 
+             }
+             else if (reading["CO2"] != null && reading["CO2"] > 1000 && reading["CO2"] < 2000) {
+                rowColor = PdfColors.orange; 
               } else {
-                rowColor = PdfColors.green; // Low CO2 (Green)
+                rowColor = PdfColors.green; 
               }
               String formattedTimestamp = 'N/A';
                 if (reading['Timestamp'] != null) {

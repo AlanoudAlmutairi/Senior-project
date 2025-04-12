@@ -82,21 +82,12 @@ class _AdminAddSensorState extends State<admin_addSensor> {
               child: ElevatedButton(
                 onPressed: () async {
                   _validate();
-                
-                  final existingSensor = await Supabase.instance.client.from('Sensors')
-                  .select('"Sensor id"').eq("Sensor id", sensorIDController.text).maybeSingle();
-                   
-
-                  if (existingSensor != null) {
-                    showSuccessDialog(context ,"Sensor ID is already exist " , Icons.warning_amber_rounded, Colors.red, widget.user); 
-                   
-                    }
-                  else if (_peopleError==null  && _roomNameError == null && _roomSizeError==null && _sensorIDError==null) {
+                   if (_peopleError==null  && _roomNameError == null && _roomSizeError==null && _sensorIDError==null) {
                   StoreLocation() ;
                   StoreSensor() ;
                    showSuccessDialog(context ,"The sensor has been successfully Added!", Icons.check_circle , Colors.green , widget.user); 
-                 
-                  }  
+                  } 
+                  
                 },
                 child: Text('Save'),
                 style: ElevatedButton.styleFrom(
@@ -174,7 +165,6 @@ class _AdminAddSensorState extends State<admin_addSensor> {
     int number_of_people = int.parse(numOfPeopleController.text);
     String room_name = roomNameController.text ;
   
-
     await Supabase.instance.client.from('Location').insert({
       'Location name': room_name,
       "Location light" : slelctedLight ,
@@ -191,7 +181,6 @@ Future<void> StoreSensor()async {
   await Supabase.instance.client.from('Sensors').insert({
     "Room name" : roomName ,
     "Sensor id" : sensor_id ,
-   
     "User_id" : widget.user.id,
   });
   }

@@ -69,8 +69,7 @@ class _DashboardState extends State<Dashboard> {
               }
             }
         });
-      }
-    },
+      }  },
     event: PostgresChangeEvent.insert,
     schema:'public',
     table: 'measurments',
@@ -119,7 +118,7 @@ class _DashboardState extends State<Dashboard> {
             return Center(child: Text("Error: ${snapshot.error}"));
           }
           locationName = snapshot.data ?? "Unknown";
-           if (co2 >= 2000 && !_co2WarningShown) {
+          if (co2 >= 2000 && !_co2WarningShown) {
               WidgetsBinding.instance.addPostFrameCallback((_) {
                 CO2Warning(context);
                 _co2WarningShown = true;

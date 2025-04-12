@@ -215,11 +215,13 @@ class _UsersSectionState extends State<UsersSection> {
     Set<String> addedUserIDs = {};
  
     for(var sensor in sensors){
-      final sensorResponse = await Supabase.instance.client.from("Sensors").select('"User_id" , "Sensor id"').eq("Sensor id", sensor["Sensor id"]);
+      final sensorResponse = await Supabase.instance.client.from("Sensors")
+      .select('"User_id" , "Sensor id"').eq("Sensor id", sensor["Sensor id"]);
      
       for(var item in sensorResponse){ 
         if(! addedUserIDs.contains(item["User_id"])){
-            UserResponse =await Supabase.instance.client.from("Users").select('"user_id", "Username" ').eq("user_id",item["User_id"] ).single();
+            UserResponse =await Supabase.instance.client.from("Users")
+            .select('"user_id", "Username" ').eq("user_id",item["User_id"] ).single();
         final username = UserResponse["Username"];
         
         if (username != null) {
