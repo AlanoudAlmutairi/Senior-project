@@ -1,9 +1,4 @@
-
-
-
 import 'dart:io';
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -144,40 +139,34 @@ pw.Widget tableCell(String text, PdfColor color, {bool bold = false}) {
 
 
 ////// FOR edit_sensor_test
-  Future<String> updateValues({
-    required String sensorId,
-    required String roomName,
-    required String roomSize,
-    required int numPeople,
-    required int light,
-  }) async {
-    String message =" ";
-    try {
-      final room = await Supabase.instance.client
-          .from("Sensors")
-          .select('Sensor id, Room name')
-          .eq("Sensor id", sensorId);
+Future<String> updateValues({
+  required SupabaseClientInterface client,
+  required String sensorId,
+  required String roomName,
+  required String roomSize,
+  required String numPeople,
+  required int light,
+}) async {
+  try {
+    final room = await client.getSensor(sensorId);
 
-      await Supabase.instance.client.from("Location").update({
-        "Location name": roomName,
-        "Location size": roomSize,
-        "Number of people": numPeople,
-        "Location light": light,
-      }).eq("Location name", room[0]["Room name"]);
+    await client.updateLocation({
+      "Location name": roomName,
+      "Location size": roomSize,
+      "Number of people": numPeople,
+      "Location light": light,
+    }, room[0]["Room name"]);
 
-      await Supabase.instance.client.from("Sensors").update({
-        "Room name": roomName,
-      }).eq("Sensor id", sensorId);
+    await client.updateSensorRoom(sensorId, roomName);
 
-      return message = "Sensor are updated successfully.";
-    } catch (e) {
-      return message = "$e There is an error updating the sensor data.";
-    }
+    return "Sensor are updated successfully.";
+  } catch (e) {
+    return "There is an error updating the sensor data.";
   }
-  
+}
+
+
  
-
-
  
  
   @override
@@ -188,5 +177,12 @@ pw.Widget tableCell(String text, PdfColor color, {bool bold = false}) {
     throw UnimplementedError();
   }
 }
+
+abstract class SupabaseClientInterface {
+  Future<List<Map<String, dynamic>>> getSensor(String sensorId);
+  Future<void> updateLocation(Map<String, dynamic> data, String oldRoomName);
+  Future<void> updateSensorRoom(String sensorId, String roomName);
+}
+
 
 

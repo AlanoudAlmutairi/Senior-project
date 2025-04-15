@@ -104,13 +104,16 @@ class _SensorSectionState extends State<SensorSection> {
                           Icons.add_circle,
                           color: Color.fromARGB(209, 71, 102, 59),
                         ),
-                        onPressed: () {
-                          Navigator.push(
+                        onPressed: () async{
+                          bool result = await Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) => admin_addSensor(user: widget.user),
                             ),
                           );
+                          if(result==true ){
+                            fetchSensors();
+                          }
                         },
                       ),
                     ],
@@ -232,6 +235,7 @@ class _UsersSectionState extends State<UsersSection> {
       }
     }
     setState(() {
+      print(TempUsers);
       usersList = TempUsers;
       loading = false;
     });
@@ -293,9 +297,13 @@ class UserTile extends StatelessWidget {
       title: Text(userList["Username"] ?? 'No Name'),
       trailing:  IconButton(
               icon: Icon(Icons.edit,  color: Color.fromARGB(209, 71, 102, 59),),
-              onPressed: () {
+              onPressed: () async{
                //  Navigator.pushReplacement( context, MaterialPageRoute(builder: (context) =>admin_EditUser(selectedUserID: userList["user_id"], user: user)),);
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => admin_editUser(userList["user_id"], user)), );
+               bool result =await Navigator.push(context, MaterialPageRoute(builder: (context) => admin_editUser(userList["user_id"], user)), );
+              if(result == true){
+                _UsersSectionState userSection = _UsersSectionState();
+                userSection.fetchUsers();
+              }
               },
             ),
     );

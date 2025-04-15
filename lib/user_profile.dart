@@ -116,13 +116,15 @@ class _SensorSectionState extends State<SensorSection> {
                               SizedBox(height: 8),
                               Text('Please take your sensor information from your admin , then add the sensor from '),
                               GestureDetector(
-                                onTap: () {
-                                  Navigator.push(
+                                onTap: ()async {
+                                 bool result = await Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => admin_addSensor(user: user),
                                     ),
                                   );
+                                  if(result == true){
+                                   fetchSensors();}
                                 },
                                 child: Text(
                                   'HERE',
@@ -173,6 +175,7 @@ class SensorTile extends StatelessWidget {
         onPressed: () {
           Navigator.push(context,MaterialPageRoute(builder: (context) => Dashboard(sensor["Sensor id"])) );
         },
+        
       ),
     );
   }  }

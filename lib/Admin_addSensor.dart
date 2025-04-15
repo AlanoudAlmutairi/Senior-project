@@ -81,12 +81,22 @@ class _AdminAddSensorState extends State<admin_addSensor> {
             Center(
               child: ElevatedButton(
                 onPressed: () async {
+                  bool roomExisting =await  IsRoomExisting();
+                 
                   _validate();
-                   if (_peopleError==null  && _roomNameError == null && _roomSizeError==null && _sensorIDError==null) {
-                  StoreLocation() ;
-                  StoreSensor() ;
+                  //when the room is not exist in the db
+                   if (roomExisting==false &&_peopleError==null  && _roomNameError == null && _roomSizeError==null && _sensorIDError==null ) {
+               
+                   StoreLocation() ;
+                   StoreSensor() ;
                    showSuccessDialog(context ,"The sensor has been successfully Added!", Icons.check_circle , Colors.green , widget.user); 
                   } 
+                  //when the room is NOT exist in the db 
+                  else if(roomExisting == true &&_peopleError==null  && _roomNameError == null && _roomSizeError==null && _sensorIDError==null ){
+                   
+                   StoreSensor() ;
+                   showSuccessDialog(context ,"The sensor has been successfully Added!", Icons.check_circle , Colors.green , widget.user); 
+                  }
                   
                 },
                 child: Text('Save'),
@@ -185,6 +195,30 @@ Future<void> StoreSensor()async {
   });
   }
 
+Future<bool> IsRoomExisting()async{
+  String roomName = roomNameController.text;
+
+  final response = await Supabase.instance.client
+      .from("Location")
+      .select('"Location name"')
+      .eq("Location name", roomName)
+      .maybeSingle();
+print("**");
+  if (response == null) {
+    return false;  
+  }
+
+  String responseRoom = response["Location name"];
+  print("response $responseRoom");
+
+  if (roomName == responseRoom) {
+    print("@@");
+    return true;
+  } else {
+    return false;
+  }
+
+}
 
  void showSuccessDialog(BuildContext context , String msg , IconData iconName , Color iconColor , User user) {
     showDialog(
@@ -215,7 +249,7 @@ Future<void> StoreSensor()async {
                 onPressed: () {
                   //Navigator.push(context,MaterialPageRoute(builder: (context) =>AdminProfile(user:user ,)));
                   Navigator.pop(context);
-                  Navigator.pop(context);
+                  Navigator.pop(context , true);
                 },
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),

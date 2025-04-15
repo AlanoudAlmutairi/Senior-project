@@ -229,12 +229,12 @@ Future<User> signUp(String role)async{
      'Email' : user.email ,
      'User permission' : role ,
       } ) ;
-    
+        return user;
    }
    else{
-    print("user null");
+   throw Exception("User sign-up failed.");
    }
-          return user;
+
   }on AuthException catch (e){
         if(e.message == "Unable to validate email address: invalid format" ){
               showMessageDialog(context, "Email is NOT correct");
@@ -242,14 +242,15 @@ Future<User> signUp(String role)async{
         else{
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${e.message}"))); 
         }
+       throw Exception("Sign-up failed: ${e.message}");
         }catch(e){
     if(mounted){
-      print(e);
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Error $e")));
-        }
-
+       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Error $e")));
+        }    
+        throw Exception("Sign-up failed: $e");
+    
   }
-return user ;
+
 }
 
 // show ui dialog for any masseges 

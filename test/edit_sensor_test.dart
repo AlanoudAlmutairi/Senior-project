@@ -1,31 +1,61 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:senior_project_axajah/Admin_editSensor.dart';
 import 'package:senior_project_axajah/temp.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 
+ class MockSupabaseClient extends Mock implements SupabaseClientInterface {}
+
+
 void main()async{
-   await Supabase.initialize(
-    url: "https://khexdrhpnxwlpulyaqbk.supabase.co",
-    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtoZXhkcmhwbnh3bHB1bHlhcWJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDEyOTA0NDQsImV4cCI6MjA1Njg2NjQ0NH0.lGQmtVMiAnEXQJvSL_8SQMaM5eGrNOg8_nqzuk1sHkA",
-  );
+  late MockSupabaseClient mockClient;
 
-/*
-e 42 pos 7: \'_instance._initialized\': You must initialize the supabase instance before calling Supabase.instance There is an error updating the sensor data.'
-   Which: is different.
-          Expected: Sensor are ...
-            Actual: 'package:s ...
-                    ^
-           Differ at offset 0
-*/
- /*test('Edit sensor', () async {
-    final x = temp();
-    final result =await x.updateValues(sensorId: "sensor 90", roomName: "office", roomSize: "2*4", numPeople: 10, light: 50);
-     expect(result, equals("Sensor are updated successfully."));
- });*/
+  setUp(() {
+    mockClient = MockSupabaseClient();
+  });
+
+
+  test('should return success message when update is successful', () async {
+      when(() => mockClient.getSensor('S1')).thenAnswer((_) async => [
+      {"Sensor id": "S1", "Room name": "Old Room"}
+      ]);
+
+    when(() => mockClient.updateLocation(any(), any())).thenAnswer((_) async {});
+    when(() => mockClient.updateSensorRoom(any(), any())).thenAnswer((_) async {});
 
 
 
+   final method = temp();
+
+    final result = await method.updateValues(
+      client: mockClient,
+      sensorId: "S1",
+      roomName: "New Room",
+      roomSize: "Large",
+      numPeople: "4",
+      light: 100,
+    );
+
+    expect(result, equals("Sensor are updated successfully."));
+  });
+
+  test('should return error message on exception', () async {
+   when(() => mockClient.getSensor(any())).thenThrow(Exception("DB error"));
+
+     final method = temp();
+    final result = await method.updateValues(
+      client: mockClient,
+      sensorId: "X1",
+      roomName: "Room X",
+      roomSize: "Small",
+      numPeople: "1",
+      light: 50,
+    );
+
+    expect(result, equals("There is an error updating the sensor data."));
+  });
 }
+
