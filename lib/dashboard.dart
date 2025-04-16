@@ -158,8 +158,6 @@ class _DashboardState extends State<Dashboard> {
                     "CO2 (ppm)",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                
-                 
                 ],
               ),
             ),
@@ -173,9 +171,7 @@ class _DashboardState extends State<Dashboard> {
                 DataCard(title: "TEMPERATURE (C)", value: temperature),
               ],
             ),
-
             const SizedBox(height: 20),
-
             // Status Indicators
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -212,6 +208,8 @@ String ? locationName = null  ;
 } 
   return locationName; 
 }
+ 
+ 
  void CO2Warning(BuildContext context) {
   showDialog(
     context: context,

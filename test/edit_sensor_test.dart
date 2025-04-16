@@ -26,11 +26,8 @@ void main()async{
     when(() => mockClient.updateLocation(any(), any())).thenAnswer((_) async {});
     when(() => mockClient.updateSensorRoom(any(), any())).thenAnswer((_) async {});
 
-
-
    final method = temp();
-
-    final result = await method.updateValues(
+  final result = await method.updateValues(
       client: mockClient,
       sensorId: "S1",
       roomName: "New Room",

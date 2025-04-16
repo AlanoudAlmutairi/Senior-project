@@ -225,9 +225,33 @@ return message = "Sensor are updated successfully. ";
 }
 }
 Future<void> deletSensor() async{
-final room = await Supabase.instance.client.from("Sensors").select('"Sensor id" ,"Room name" ').eq("Sensor id", widget.selectedSensor);
-  await Supabase.instance.client.from("Sensors").delete().eq("Sensor id", widget.selectedSensor);
-  await Supabase.instance.client.from("Location").delete().eq("Location name", room[0]["Room name"]);
+   // 1. get selscted sensor information
+  final room = await Supabase.instance.client
+      .from("Sensors").select('"Sensor id", "Room name"')
+      .eq("Sensor id", widget.selectedSensor);
+
+  // get the room 
+  final String roomName = room[0]["Room name"];
+
+  // 2.delete selected sensor 
+  await Supabase.instance.client
+      .from("Sensors").delete()
+      .eq("Sensor id", widget.selectedSensor);
+
+  // 3. check there is any other sensor in the same room (location)
+  final remainingSensors = await Supabase.instance.client
+      .from("Sensors").select()
+      .eq("Room name", roomName);
+
+  // 4.if there is no other sensors in the same room , delete the room 
+  if (remainingSensors.isEmpty) {
+    await Supabase.instance.client
+        .from("Location") .delete()
+        .eq("Location name", roomName);
+  }
+
+
+
 }
 
 

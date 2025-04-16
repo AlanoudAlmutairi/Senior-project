@@ -203,16 +203,15 @@ Future<bool> IsRoomExisting()async{
       .select('"Location name"')
       .eq("Location name", roomName)
       .maybeSingle();
-print("**");
+
   if (response == null) {
     return false;  
   }
 
   String responseRoom = response["Location name"];
-  print("response $responseRoom");
 
   if (roomName == responseRoom) {
-    print("@@");
+
     return true;
   } else {
     return false;
