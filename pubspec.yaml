@@ -42,8 +42,12 @@ dependencies:
   fl_chart: ^0.70.2
   google_fonts: ^6.2.1
   mocktail: ^1.0.4
+  http: ^1.3.0
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
+  integration_test:
+    sdk: flutter
   flutter_test:
     sdk: flutter
 
@@ -67,8 +71,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/assets/axajahLogo.jpg
-    - lib/assets/axajah_logo.png
+    - lib/assets/axajah_logo2.png
     - lib/assets/User logo.jpg
     - lib/assets/UserLogo.jpg
   #   - images/a_dot_burr.jpeg

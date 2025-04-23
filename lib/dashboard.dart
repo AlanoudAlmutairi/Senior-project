@@ -13,7 +13,8 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-    String selectedSensor = " " ;
+    late  String selectedSensor = " " ;
+    late String locationName = " ";
     double co2 =0 ;
     double humidity = 0; 
     double temperature = 0 ;
@@ -88,7 +89,7 @@ class _DashboardState extends State<Dashboard> {
 
   @override
   Widget build(BuildContext context) {
-    String locationName ;
+ 
     selectedSensor = widget.selectedSensor;
 
 
@@ -263,7 +264,7 @@ String ? locationName = null  ;
                           vertical: 12, horizontal: 24),
                     ),
                     onPressed: () {
-                         Navigator.push(context,MaterialPageRoute(builder: (context) =>recommended_Plants()));
+                         Navigator.push(context,MaterialPageRoute(builder: (context) =>RecommendedPlants(sensorId: selectedSensor, locationName: locationName ,)));
                     },
                     child: const Text(
                       'suggested plants',

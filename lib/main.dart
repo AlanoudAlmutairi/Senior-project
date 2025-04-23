@@ -60,7 +60,7 @@ class firstAccess extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                    Image.asset(
-                  'lib/assets/axajah_logo.png',
+                  'lib/assets/axajah_logo2.png',
                   width: 220,
                   height: 180,
                   fit: BoxFit.cover,

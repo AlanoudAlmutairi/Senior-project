@@ -197,9 +197,24 @@ class GenerateReportScreenState extends State<GenerateReportScreen> {
   return  startDate;
 }
 
+Future<List<String>> fetchRecommendedPlants(String sensorId) async {
+  try {
+    final response = await Supabase.instance.client
+        .from('Location-plants')
+        .select('Plants')
+        .eq('sensor_id', sensorId);
+
+    if (response == null || response.isEmpty) return [];
+
+    return response.map<String>((plant) => plant['Plants'] as String).toList();
+  } catch (e) {
+    print("Error fetching plants: $e");
+    return [];
+  }
+}
+
 
 Future<void> getSensorsFromDB(User user ) async {
- //final List<String> sensorOptions = [];
 
   try {
     final userSensors = await Supabase.instance.client
@@ -217,7 +232,6 @@ setState(() {
 
 });
   
-    print("sensors List $sensorsOption");
   } catch (error) {
     print('Error fetching sensors: $error');
   }
@@ -257,7 +271,7 @@ Future<void> generateReport() async {
 
  List<dynamic> readings = await fetchReportData(selectedDuration, selectedSensor);
     String roomName = " ";
-    final ByteData data = await rootBundle.load('lib/assets/axajah_logo.png');
+    final ByteData data = await rootBundle.load('lib/assets/axajah_logo2.png');
     final Uint8List bytes = data.buffer.asUint8List();
   if(! readings.isEmpty){
        roomName =await getRoomName()   ; }
@@ -303,7 +317,7 @@ Future<void> generateReport() async {
     pw.Center(
       child: pw.Text(
         'No data available for this sensor during the selected period.\n'
-        ' OR \n there is NOT sensors assigned to your account. ',
+        'OR\nThere are no sensors assigned to your account.',
         style: pw.TextStyle(fontSize: 14, color: PdfColors.red),),
     )
   else
@@ -353,6 +367,63 @@ Future<void> generateReport() async {
       ],
     ),
   );
+   final recommendedPlants = await fetchRecommendedPlants(selectedSensor);
+
+  if (recommendedPlants.isNotEmpty) {
+    pdf.addPage(
+      pw.MultiPage(
+         header: (pw.Context context) {
+        return pw.Row(
+          mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
+          children:[
+                 pw.Column(
+              crossAxisAlignment: pw.CrossAxisAlignment.start,
+              children: [
+                    pw.Text(
+                      "Recommended Plants",
+                      style: pw.TextStyle(fontSize: 18, fontWeight: pw.FontWeight.bold  ),
+                      textAlign: pw.TextAlign.center,
+                    ),
+                      pw.Text("Sensor : $selectedSensor , Room :$roomName", 
+                      style: pw.TextStyle(fontSize: 12),
+                      textAlign: pw.TextAlign.center,),
+          ],
+        ),
+            pw.Column(
+              crossAxisAlignment:pw.CrossAxisAlignment.start ,
+              children: [
+                pw.Image(
+                    pw.MemoryImage(bytes), 
+                    width: 200,
+                    height: 200,
+                  
+                  ),
+              ],),
+        ] );   },
+        build: (context) => [
+          pw.TableHelper.fromTextArray(
+            headers: ['NO', 'Plant Name'],
+            data: List.generate(
+              recommendedPlants.length,
+              (index) => [
+                (index + 1).toString(),
+                recommendedPlants[index],
+              ],
+            ),
+          headerDecoration: pw.BoxDecoration(
+            color: PdfColors.blueGrey100 ,  
+          ),
+          headerStyle: pw.TextStyle(
+            fontWeight: pw.FontWeight.bold,
+            color: PdfColors.black,
+          ),
+          cellAlignment: pw.Alignment.center,
+
+          ),
+        ],
+      ),
+    );
+  }
 
   // Save PDF file
   final directory = await getApplicationDocumentsDirectory();
@@ -397,7 +468,6 @@ String ? locationName = null  ;
 
 
 }
-
 
 
 
