@@ -16,156 +16,143 @@ class _SignUpState extends State<SignUp> {
   bool _isAdmin = false;
   bool _isUser = false;
   bool _obscurePassword = true;
-  //text controllers 
+
   TextEditingController email_controller = TextEditingController();
   TextEditingController PW_controller = TextEditingController();
   TextEditingController username_controller = TextEditingController();
-  
-    String username ="";
-    String email="" ;
-    String password="" ;
-    String role="";
-   late User user  ;
 
-  
+  String username = "";
+  String email = "";
+  String password = "";
+  String role = "";
+  late User user;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF7EFE7), 
-        appBar: AppBar(    backgroundColor: Colors.transparent,
+      backgroundColor: Color(0xFFF7EFE7),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color.fromARGB(209, 71, 102, 59),),
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(209, 71, 102, 59)),
           onPressed: () {
-              Navigator.push(context,MaterialPageRoute(builder: (context) =>firstAccess()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => firstAccess()));
           },
-        ),),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-           
-            // Create Account Title
-            Text(
-              "Create account",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF4F6A47), // Greenish color
-              ),
-            ),
-            SizedBox(height: 20),
-
-            // Role Selection (Admin / User)
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                _buildRoleCheckbox("Admin", _isAdmin, (value) {
-                  setState(() {
-                    _isAdmin = value!;
-                    _isUser = !value; // Uncheck other option
-                  });
-                }),
-                SizedBox(width: 20),
-                _buildRoleCheckbox("User", _isUser, (value) {
-                  setState(() {
-                    _isUser = value!;
-                    _isAdmin = !value; // Uncheck other option
-                  });
-                }),
-              ],
-            ),
-
-            SizedBox(height: 15),
-
-            // Username Field
-            _buildTextField("Username", "Your username", false , username_controller),
-
-            SizedBox(height: 15),
-
-            // Email Field
-            _buildTextField("Email", "Your email", false ,email_controller),
-
-            SizedBox(height: 15),
-
-            // Password Field
-            _buildTextField("Password", "Password", true , PW_controller),
-
-            SizedBox(height: 40),
-
-            // Sign Up Button
-            Center(
-              child: ElevatedButton(
-                onPressed: () async{
-                   role = _isAdmin ? "Admin" : _isUser ? "User" : "None";
-                  // Handle signup action
-                  user = await signUp(role);
-                  if(role == "Admin"){
-                       Navigator.push(context,MaterialPageRoute(builder: (context) => AdminProfile(user: user)) );
-                  }
-                  else if(role =="User"){
-                     Navigator.push(context,MaterialPageRoute(builder: (context) => UserProfile(current_user: user)) );
-                  }
-                
-                   //;
-           
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF4F6A47), // Greenish button color
-                  foregroundColor: Colors.white,
-                  padding: EdgeInsets.symmetric(horizontal: 120, vertical: 12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
+        ),
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Create account",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF4F6A47),
                 ),
-                child: Text("create an account", style: TextStyle(fontSize: 16)),
               ),
-            ),
+              SizedBox(height: 20),
 
-            SizedBox(height: 50),
+              // Role selection
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  _buildRoleCheckbox("Admin", _isAdmin, (value) {
+                    setState(() {
+                      _isAdmin = value!;
+                      _isUser = !value;
+                    });
+                  }),
+                  SizedBox(width: 20),
+                  _buildRoleCheckbox("User", _isUser, (value) {
+                    setState(() {
+                      _isUser = value!;
+                      _isAdmin = !value;
+                    });
+                  }),
+                ],
+              ),
+              SizedBox(height: 15),
 
-            // Already have an account? Log in
-            Center(
-              child: RichText(
-                text: TextSpan(
-                  style: TextStyle(color: Colors.black87),
-                  children: [
-                    TextSpan(text: "Already have an account? "),
-                    WidgetSpan(
-                      child: GestureDetector(
-                        onTap: () {
-                          // Handle login navigation
-                          Navigator.push(context,MaterialPageRoute(builder: (context) =>Login()));
-                          
-                        },
-                        child: Text(
-                          "Log in",
-                          style: TextStyle(
-                            color: Color(0xFF4F6A47), // Greenish color
-                            fontWeight: FontWeight.bold,
+              _buildTextField("Username", "Your username", false, username_controller),
+              SizedBox(height: 15),
+
+              _buildTextField("Email", "Your email", false, email_controller),
+              SizedBox(height: 15),
+
+              _buildTextField("Password", "Password", true, PW_controller),
+              SizedBox(height: 40),
+
+              Center(
+                child: ElevatedButton(
+                  onPressed: () async {
+                    role = _isAdmin ? "Admin" : _isUser ? "User" : "None";
+                    user = await signUp(role);
+
+                    if (role == "Admin") {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AdminProfile(user: user)));
+                    } else if (role == "User") {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => UserProfile(current_user: user)));
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF4F6A47),
+                    foregroundColor: Colors.white,
+                    padding: EdgeInsets.symmetric(horizontal: 120, vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: Text("Create an account", style: TextStyle(fontSize: 16)),
+                ),
+              ),
+              SizedBox(height: 50),
+
+              Center(
+                child: RichText(
+                  text: TextSpan(
+                    style: TextStyle(color: Colors.black87),
+                    children: [
+                      TextSpan(text: "Already have an account? "),
+                      WidgetSpan(
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => Login()));
+                          },
+                          child: Text(
+                            "Log in",
+                            style: TextStyle(
+                              color: Color(0xFF4F6A47),
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
 
-  // Checkbox Widget
   Widget _buildRoleCheckbox(String label, bool value, Function(bool?) onChanged) {
     return Row(
       children: [
         Checkbox(
           value: value,
-          activeColor: Color(0xFF4F6A47), // Green check color
+          activeColor: Color(0xFF4F6A47),
           onChanged: onChanged,
         ),
         Text(label),
@@ -173,13 +160,12 @@ class _SignUpState extends State<SignUp> {
     );
   }
 
-  // TextField Widget
-  Widget _buildTextField(String label, String hint, bool isPassword , TextEditingController controller ) {
+  Widget _buildTextField(
+      String label, String hint, bool isPassword, TextEditingController controller) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+        Text(label, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
         SizedBox(height: 5),
         TextField(
           obscureText: isPassword ? _obscurePassword : false,
@@ -193,9 +179,7 @@ class _SignUpState extends State<SignUp> {
             suffixIcon: isPassword
                 ? IconButton(
                     icon: Icon(
-                      _obscurePassword
-                          ? Icons.visibility_off
-                          : Icons.visibility,
+                      _obscurePassword ? Icons.visibility_off : Icons.visibility,
                     ),
                     onPressed: () {
                       setState(() {
@@ -210,51 +194,46 @@ class _SignUpState extends State<SignUp> {
     );
   }
 
-// sign up method with supabase
-Future<User> signUp(String role)async{
-  final authService = AuthServices();
-  username = username_controller.text;
-  email = email_controller.text;
-  password = PW_controller.text;
+  Future<User> signUp(String role) async {
+    final authService = AuthServices();
+    username = username_controller.text;
+    email = email_controller.text;
+    password = PW_controller.text;
 
-  try{
-    var response = await authService.signUpWithPW( email, password);
-   user = response.user!;
+    try {
+      var response = await authService.signUpWithPW(email, password);
+      user = response.user!;
 
-     if (user != null){
-    await Supabase.instance.client.from('Users').insert({
-     'user_id' : user.id ,
-     'Username' : username ,
-     'Password':password ,
-     'Email' : user.email ,
-     'User permission' : role ,
-      } ) ;
-        return user;
-   }
-   else{
-   throw Exception("User sign-up failed.");
-   }
-
-  }on AuthException catch (e){
-        if(e.message == "Unable to validate email address: invalid format" ){
-              showMessageDialog(context, "Email is NOT correct");
-        }
-        else{
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${e.message}"))); 
-        }
-       throw Exception("Sign-up failed: ${e.message}");
-        }catch(e){
-    if(mounted){
-       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Error $e")));
-        }    
-        throw Exception("Sign-up failed: $e");
-    
+      if (user != null) {
+        await Supabase.instance.client.from('Users').insert({
+          'user_id': user.id,
+          'Username': username,
+          'Password': password,
+          'Email': user.email,
+          'User permission': role,
+        });
+      } else {
+        print("user null");
+      }
+      return user;
+    } on AuthException catch (e) {
+      if (e.message == "Unable to validate email address: invalid format") {
+        showMessageDialog(context, "Email is NOT correct");
+      } else {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text("${e.message}")));
+      }
+    } catch (e) {
+      if (mounted) {
+        print(e);
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text("Error $e")));
+      }
+    }
+    return user;
   }
 
-}
-
-// show ui dialog for any masseges 
-void showMessageDialog(BuildContext context , String msg ) {
+  void showMessageDialog(BuildContext context, String msg) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -265,7 +244,7 @@ void showMessageDialog(BuildContext context , String msg ) {
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.warning_amber_rounded, size: 50, color:Colors.red),
+              Icon(Icons.warning_amber_rounded, size: 50, color: Colors.red),
               SizedBox(height: 10),
               Text(
                 msg,
@@ -294,5 +273,4 @@ void showMessageDialog(BuildContext context , String msg ) {
       },
     );
   }
-
 }
