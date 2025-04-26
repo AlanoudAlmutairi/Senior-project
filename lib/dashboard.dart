@@ -18,12 +18,11 @@ class _DashboardState extends State<Dashboard> {
     double co2 =0 ;
     double humidity = 0; 
     double temperature = 0 ;
-     var channel ;
+    var channel ;
     bool _co2WarningShown = false;
      bool _isWarningDialogVisible = false; 
-   // RealtimeSubscription? subscription;
-
-      @override
+   
+   @override
   void initState() {
     super.initState();
     _loadInitialData();
@@ -62,7 +61,7 @@ class _DashboardState extends State<Dashboard> {
           humidity = (newData['Humidity'] ?? 0).toDouble();
           temperature = (newData['Temperature'] ?? 0).toDouble();
 
-                 if (co2 < 2000 && _co2WarningShown && _isWarningDialogVisible) {
+          if (co2 < 2000 && _co2WarningShown && _isWarningDialogVisible) {
               _co2WarningShown = false;
               _isWarningDialogVisible = false;
               if (Navigator.canPop(context)) {
@@ -89,15 +88,13 @@ class _DashboardState extends State<Dashboard> {
 
   @override
   Widget build(BuildContext context) {
- 
     selectedSensor = widget.selectedSensor;
-
 
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7F5), // Background color
     appBar: AppBar(
       backgroundColor: Colors.transparent, // No background color
-      elevation: 0, // No elevation (no shadow)
+      elevation: 0, 
       leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Color.fromARGB(209, 71, 102, 59),),
           onPressed: () {
@@ -119,6 +116,7 @@ class _DashboardState extends State<Dashboard> {
             return Center(child: Text("Error: ${snapshot.error}"));
           }
           locationName = snapshot.data ?? "Unknown";
+
           if (co2 >= 2000 && !_co2WarningShown) {
               WidgetsBinding.instance.addPostFrameCallback((_) {
                 CO2Warning(context);
@@ -200,12 +198,11 @@ Future<String> getRoomName() async {
 String ? locationName = null  ;
 
   final name = await Supabase.instance.client.from("Sensors").select('"Sensor id" , "Room name" ').eq("Sensor id", selectedSensor);
-//name != null && name.isNotEmpty
+
   if (name.isNotEmpty ) {
   locationName = name[0]["Room name"].toString();
 } else {
-  // Handle the case where the location name is not found
-  locationName = "Unknown Location"; // or any default value
+  locationName = "Unknown Location"; 
 } 
   return locationName; 
 }
@@ -295,7 +292,7 @@ String ? locationName = null  ;
 
             Positioned(
               top: 8,
-              right: 8, 
+              left: 8,
               child: GestureDetector(
                 onTap: () {
                     _co2WarningShown = false; 
@@ -377,7 +374,7 @@ Color getApproperateColor (){
         else if(value >30  && value <70){
           color = Colors.orange ;
         }
-        else if(value >= 70 && value <30 ){
+        else if(value >= 70 ){
           color = Colors.red ;
         }
         break ;

@@ -55,7 +55,7 @@ print("📡 Sensor ID received: ${widget.sensorId}");
 
       // 2. Send to ML model API
       final response = await http.post(
-        Uri.parse('https://4fc3-34-23-90-118.ngrok-free.app/recommend'),
+        Uri.parse('https://d9fc-35-196-48-172.ngrok-free.app/recommend'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'humidity': humidity, 'co2': co2}),
       );

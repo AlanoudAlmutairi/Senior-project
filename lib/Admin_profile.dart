@@ -351,7 +351,7 @@ class _SidebarState extends State<Sidebar> {
     if (current_user != null) {
       final response = await Supabase.instance.client
           .from('Users')
-          .select('"user_id" , "User permission" , "Email"')
+          .select('"user_id" , "User permission" , "Email" , "Username"')
           .eq('"user_id"', current_user.id )
           .single();
 

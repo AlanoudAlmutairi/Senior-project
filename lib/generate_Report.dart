@@ -126,15 +126,6 @@ class GenerateReportScreenState extends State<GenerateReportScreen> {
               ),
             ),
              SizedBox(height: 20),
-            Expanded(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
-                child: Table(
-                  border: TableBorder.all(),
-                  children: _rows,
-                          ),
-              ),
-            ),
           ],
         ),
       ),
