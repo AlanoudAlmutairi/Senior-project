@@ -46,7 +46,7 @@ void initState() {
                   icon: Icon(Icons.arrow_back, color: Colors.black),
                   onPressed: () {
                      //Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => admin_profile()),  );
-                     Navigator.pop(context);
+                     Navigator.pop(context , true);
                   },
                 ),
               ),
@@ -104,17 +104,7 @@ SizedBox(height: 70),
   }
 
   Widget _buildSensorCard(String title, String subtitle) {
-      late var  sensor ;
-    ListView.builder(
-  itemCount: userSensors.length, // كم عنصر عندي
-  itemBuilder: (context, index) {
-      sensor= userSensors[index]; // أجيب العنصر الحالي
-    return ListTile(
-      title: Text(sensor['Sensor id']), // أعرض الاسم
-      subtitle: Text(sensor['Room name']), // أعرض الغرفة
-    );
-  },
-  );
+
     return Card(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
@@ -134,8 +124,7 @@ SizedBox(height: 70),
            IconButton(
         icon: Icon(Icons.delete, color: Colors.grey),
         onPressed: () async {
-            await Supabase.instance.client.from("Sensors").delete().eq("Sensor id", title).eq("User_id", widget.selectedUserID);
-          
+           await Supabase.instance.client.from("Sensors").delete().eq("Sensor id" ,title ).eq("User_id" ,widget.selectedUserID);
             await fetchUserSensors();
             setState(() {}); 
                 },

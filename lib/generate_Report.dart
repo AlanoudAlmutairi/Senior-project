@@ -273,8 +273,9 @@ Future<void> generateReport() async {
     String roomName = " ";
     final ByteData data = await rootBundle.load('lib/assets/axajah_logo2.png');
     final Uint8List bytes = data.buffer.asUint8List();
-  if(! readings.isEmpty){
-       roomName =await getRoomName()   ; }
+
+    roomName =await getRoomName()   ;
+
  
   // Add PDF content
   pdf.addPage(

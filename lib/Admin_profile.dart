@@ -239,6 +239,11 @@ class _UsersSectionState extends State<UsersSection> {
       loading = false;
     });
   }
+
+void refreshUsers() {
+  fetchUsers();
+}
+
 @override
   Widget build(BuildContext context) {
     return Card(
@@ -264,7 +269,7 @@ class _UsersSectionState extends State<UsersSection> {
 
                   return Column(
                     children: [
-                      UserTile(user, widget.user),
+                      UserTile(user, widget.user , refreshUsers),
                       if (index != usersList.length - 1)
                         Divider(color: Colors.grey[300]),
                     ],
@@ -287,8 +292,8 @@ class _UsersSectionState extends State<UsersSection> {
 class UserTile extends StatelessWidget {
   final Map<String, dynamic> userList;
   final User user ;
-
-  UserTile(this.userList , this.user);
+  final VoidCallback onRefresh;
+  UserTile(this.userList , this.user , this.onRefresh);
 
   @override
   Widget build(BuildContext context) {
@@ -297,11 +302,9 @@ class UserTile extends StatelessWidget {
       trailing:  IconButton(
               icon: Icon(Icons.edit,  color: Color.fromARGB(209, 71, 102, 59),),
               onPressed: () async{
-               //  Navigator.pushReplacement( context, MaterialPageRoute(builder: (context) =>admin_EditUser(selectedUserID: userList["user_id"], user: user)),);
                bool result =await Navigator.push(context, MaterialPageRoute(builder: (context) => admin_editUser(userList["user_id"], user)), );
               if(result == true){
-                _UsersSectionState userSection = _UsersSectionState();
-                userSection.fetchUsers();
+              onRefresh();
               }
               },
             ),
