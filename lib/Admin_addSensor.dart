@@ -39,7 +39,7 @@ class _AdminAddSensorState extends State<admin_addSensor> {
          leading: IconButton(
           icon: Icon(Icons.arrow_back,   color: Color.fromARGB(209, 71, 102, 59),),
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.pop(context , true);
           },
         ),
      
