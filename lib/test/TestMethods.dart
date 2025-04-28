@@ -1,6 +1,8 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -22,16 +24,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: temp(),
+      home: Testmethods(),
     );
   }
 }
 
 
-class temp extends StatelessWidget {
+class Testmethods extends StatelessWidget {
 
 ///// FOR Generate_PDF_test  
-Future<void> generateMockReport(String outPutPath) async {
+Future<String> generateMockReport(String outPutPath) async {
   final pdf = pw.Document();
 
   // test data 
@@ -52,7 +54,7 @@ Future<void> generateMockReport(String outPutPath) async {
 
   final roomName = "Test Room";
 
-  final ByteData data = await rootBundle.load('lib/assets/axajah_logo.png');
+  final ByteData data = await rootBundle.load('lib/assets/axajah_logo2.png');
   final Uint8List bytes = data.buffer.asUint8List();
 
   pdf.addPage(
@@ -115,9 +117,14 @@ Future<void> generateMockReport(String outPutPath) async {
     ),
   );
 
-  final dir = await Directory.systemTemp.createTemp(); 
-  final file = File(outPutPath);
-  await file.writeAsBytes(await pdf.save());
+  try {
+    // توليد التقرير
+    final file = File(outPutPath);
+    await file.writeAsBytes(await pdf.save());
+    return "Report created successfully";
+  } catch (e) {
+    throw Exception('Failed to generate report: $e');
+  }
 
 }
 pw.Widget tableCell(String text, PdfColor color, {bool bold = false}) {
@@ -166,9 +173,90 @@ Future<String> updateValues({
 }
 
 
+  //log in 
+  Future<String> logInWIthPW(String email , String password)async{
+    final SupabaseClient _supabase = Supabase .instance.client;
+    var result =  await _supabase.auth.signInWithPassword(
+      email: email,
+      password: password);
+      
+      if(result.user != null)
+      return "Success";
+      else
+      return "Fail";
+  
+  }
  
  
- 
+
+  Future<List<String>> fetchDataAndRecommend(String sensorId, String locationName) async {
+    late final List<String> recommended ;
+  try {
+    // 1. Get latest CO2 and Humidity readings
+    final measurements = await Supabase.instance.client
+        .from('measurments')
+        .select()
+        .eq('Sensor id', sensorId) 
+        .order('Timestamp', ascending: false)
+        .limit(1);
+
+    if (measurements.isEmpty) {
+      print("No measurements found for sensor $sensorId");
+      
+    }
+
+    final latest = measurements.first;
+    final double humidity = (latest['Humidity'] ?? 0).toDouble();
+    final double co2 = (latest['CO2'] ?? 0).toDouble();
+
+    // 2. Send to ML model API
+    final modelResponse = await http.post(
+      Uri.parse('https://a4f9-35-237-144-19.ngrok-free.app/recommend'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'humidity': humidity, 'co2': co2}),
+    );
+
+    print("Model Response: ${modelResponse.body}");
+
+    if (modelResponse.statusCode == 200) {
+      final modelData = jsonDecode(modelResponse.body);
+      recommended= List<String>.from(modelData['top_3_recommendations']);
+      return recommended;
+      
+    } else {
+      throw Exception("Model API error: ${modelResponse.statusCode}");
+    }
+  } catch (e) {
+    print("Error in fetchDataAndRecommend: $e");
+    return recommended ;
+  }
+}
+
+Future<String> storeToDB(String sensorId, String locationName, List<String> recommended) async {
+  try {
+    for (final plant in recommended) {
+      print("Saving to Supabase: location=$locationName, plant=$plant");
+      await Supabase.instance.client.from('Location-plants').insert({
+        'sensor_id': sensorId,
+        'Location name': locationName,
+        'Plants': plant,
+      });
+
+      await Supabase.instance.client.from('Plants').insert({
+        'Plants': plant,
+      });
+    }
+    return "Data Stored Successfully";
+  } catch (e) {
+    print("Error in storeToDB: $e");
+    return "Fail to store data";
+  }
+}
+
+
+
+
+  
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

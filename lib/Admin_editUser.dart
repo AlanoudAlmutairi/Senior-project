@@ -126,7 +126,7 @@ SizedBox(height: 70),
         onPressed: () async {
            await Supabase.instance.client.from("Sensors").delete().eq("Sensor id" ,title ).eq("User_id" ,widget.selectedUserID);
             await fetchUserSensors();
-            setState(() {}); 
+           // setState(() {}); 
                 },
 ),
 

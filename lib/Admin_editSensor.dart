@@ -126,7 +126,7 @@ SizedBox(height: 20),
                   onPressed: ()async {
                  String message =await updateValues();
                  if(message.contains("successfully")){
-                                      showSuccessDialog(context , message ,Icons.check_circle , Colors.green , widget.user);
+                      showSuccessDialog(context , message ,Icons.check_circle , Colors.green , widget.user);
                  }else 
                  showSuccessDialog(context , message , Icons.warning_amber_rounded, Colors.red, widget.user);
                   

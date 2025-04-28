@@ -30,7 +30,7 @@ class _RecommendedPlantsState extends State<RecommendedPlants> {
 
   Future<void> fetchDataAndRecommend() async {
     try {
-      print("📡 Sensor ID received: ${widget.sensorId}");
+      print("Sensor ID received: ${widget.sensorId}");
       // 1. Get latest CO2 and Humidity readings
       final data = await Supabase.instance.client
           .from('measurments')
@@ -38,7 +38,7 @@ class _RecommendedPlantsState extends State<RecommendedPlants> {
           .ilike('Sensor id', widget.sensorId)
           .order('Timestamp', ascending: false)
           .limit(1);
-print("📡 Sensor ID received: ${widget.sensorId}");
+print("Sensor ID received: ${widget.sensorId}");
       if (data.isEmpty) {
         setState(() {
           error = "No sensor data found.";
@@ -51,7 +51,7 @@ print("📡 Sensor ID received: ${widget.sensorId}");
       final double humidity = (latest['Humidity'] ?? 0).toDouble();
       final double co2 = (latest['CO2'] ?? 0).toDouble();
 
-    print("✅ CO2: $co2, Humidity: $humidity");
+    print("CO2: $co2, Humidity: $humidity");
 
       // 2. Send to ML model API
       final response = await http.post(
@@ -60,7 +60,7 @@ print("📡 Sensor ID received: ${widget.sensorId}");
         body: jsonEncode({'humidity': humidity, 'co2': co2}),
       );
 
-    print("🧠 Model Response: ${response.body}");
+    print("Model Response: ${response.body}");
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
@@ -73,12 +73,13 @@ print("📡 Sensor ID received: ${widget.sensorId}");
 
         // 3. Save to Supabase
         for (final plant in recommended) {
-          print("📥 Saving to Supabase: location=${widget.locationName}, plant=$plant");
+          print("Saving to Supabase: location=${widget.locationName}, plant=$plant");
           await Supabase.instance.client.from('Location-plants').insert({
             'sensor_id': widget.sensorId,
             'Location name': widget.locationName,
             'Plants': plant,
           });
+          await Supabase.instance.client.from("Plants").insert({"Plants name" : plant});
         }
       } else {
         setState(() {
@@ -87,7 +88,7 @@ print("📡 Sensor ID received: ${widget.sensorId}");
         });
       }
     } catch (e) {
-      print("❌ Error: $e");
+      print(" Error: $e");
       setState(() {
         error = "Error occurred: $e";
         loading = false;
