@@ -87,7 +87,7 @@ class _AdminAddSensorState extends State<admin_addSensor> {
                   //when the room is not exist in the db
                    if (roomExisting==false &&_peopleError==null  && _roomNameError == null && _roomSizeError==null && _sensorIDError==null ) {
                
-                   StoreLocation() ;
+                   Add_Location() ;
                    StoreSensor() ;
                    showSuccessDialog(context ,"The sensor has been successfully Added!", Icons.check_circle , Colors.green , widget.user); 
                   } 
@@ -170,7 +170,7 @@ class _AdminAddSensorState extends State<admin_addSensor> {
     );
 }
 
- Future<void> StoreLocation()async {
+ Future<void> Add_Location()async {
     String room_size = roomSizeController.text ;
     int number_of_people = int.parse(numOfPeopleController.text);
     String room_name = roomNameController.text ;

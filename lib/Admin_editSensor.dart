@@ -124,7 +124,7 @@ SizedBox(height: 20),
                 ),
                 ElevatedButton(
                   onPressed: ()async {
-                 String message =await updateValues();
+                 String message =await updateSensor();
                  if(message.contains("successfully")){
                       showSuccessDialog(context , message ,Icons.check_circle , Colors.green , widget.user);
                  }else 
@@ -204,7 +204,7 @@ return response as List ;
 }
 
 
-Future <String> updateValues()async {
+Future <String> updateSensor()async {
   String message ; 
 try{
   final room = await Supabase.instance.client.from("Sensors").select('"Sensor id" ,"Room name" ').eq("Sensor id", widget.selectedSensor);

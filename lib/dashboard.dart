@@ -25,13 +25,13 @@ class _DashboardState extends State<Dashboard> {
    @override
   void initState() {
     super.initState();
-    _loadInitialData();
+    _DisplayMeasurment() ;
     _subscribeToMeasurements();
     
   }
 
   // get the last reading from sensor 
-  void _loadInitialData() async {
+  void _DisplayMeasurment()  async {
     final data = await Supabase.instance.client
         .from('measurments')
         .select()
@@ -261,7 +261,9 @@ String ? locationName = null  ;
                           vertical: 12, horizontal: 24),
                     ),
                     onPressed: () {
-                         Navigator.push(context,MaterialPageRoute(builder: (context) =>RecommendedPlants(sensorId: selectedSensor, locationName: locationName ,)));
+                         Navigator.push(context,
+                         MaterialPageRoute(builder:
+                          (context) =>RecommendedPlants(sensorId: selectedSensor, locationName: locationName ,)));
                     },
                     child: const Text(
                       'suggested plants',

@@ -208,11 +208,11 @@ class _UsersSectionState extends State<UsersSection> {
     setState(() {
       sensors = List<Map<String, dynamic>>.from(response as Iterable);
       loading = false;
-      fetchUsers();
+      view_users();
     });
   }
 
-  Future<void> fetchUsers() async {
+  Future<void> view_users() async {
     List<Map<String, dynamic>> TempUsers = [];
     var UserResponse ;
     Set<String> addedUserIDs = {};
@@ -241,7 +241,7 @@ class _UsersSectionState extends State<UsersSection> {
   }
 
 void refreshUsers() {
-  fetchUsers();
+  view_users();
 }
 
 @override

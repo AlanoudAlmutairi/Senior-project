@@ -64,11 +64,11 @@ class _SensorSectionState extends State<SensorSection> {
   @override
   void initState(){
     super.initState();
-     fetchSensors(); 
+     view_Sensors_information(); 
     
   }
 
-  Future<void> fetchSensors() async {
+  Future<void> view_Sensors_information() async {
    final response =await Supabase.instance.client.from("Sensors").select('"User_id", "Room name" ,"Sensor id"').eq("User_id",userID );
    
     setState(() {
@@ -124,7 +124,7 @@ class _SensorSectionState extends State<SensorSection> {
                                     ),
                                   );
                                   if(result == true){
-                                   fetchSensors();}
+                                   view_Sensors_information();}
                                 },
                                 child: Text(
                                   'HERE',
