@@ -1,0 +1,356 @@
+Unnamed: 0,common_name,family,categories,origin,climate,zone,img_url,suitable_temperature,estimated_humidity,estimated_co2
+0,  Janet Craig  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5556.jpg,-1°C to 10°C,72,668
+1,  Lady palm  ,Arecaceae,Palm,  China  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5725.jpg,-7°C to 10°C,62,557
+2,"  Tailflower ,  Wax flower  ",Araceae,Anthurium,  Cultivar  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5491.jpg,4°C to 10°C,84,609
+3,  Elephant ear  ,Araceae,Other,  Hybrid  ,Tropical humid,[11],http://www.tropicopia.com/house-plant/thumbnails/5486.jpg,4°C to 10°C,76,607
+4,  Malaysian Dracaena  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5586.jpg,-1°C to 10°C,62,593
+5,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5466.jpg,4°C to 10°C,88,714
+6,  Malaysian Dracaena  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5585.jpg,-1°C to 10°C,71,676
+7,"  Herringbone ,  Pink praying plant  ",Marantaceae,Hanging,  Brazil  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5657.jpg,-1°C to 10°C,83,701
+8,  Guzmania  ,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5632.jpg,-1°C to 10°C,73,603
+9,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5480.jpg,4°C to 10°C,68,520
+10,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5758.jpg,-1°C to 10°C,62,536
+11,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5477.jpg,4°C to 10°C,60,780
+12,"  Oleander ,  Rose bay  ",Apocynaceae,Flower,  Mediterranean  ,Subtropical,"[11, 7]",http://www.tropicopia.com/house-plant/thumbnails/5669.jpg,-18°C to 10°C,62,419
+13,"  African evergreen ,  Arrowhead vine ,  Goosefoot plant  ",Araceae,Hanging,  Cultivar  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5774.jpg,-1°C to 10°C,64,550
+14,"  Bird nest Anthurium ,  Cabbage Anthurium  ",Araceae,Anthurium,  Guyana  ,Tropical humid,[11],http://www.tropicopia.com/house-plant/thumbnails/5489.jpg,4°C to 10°C,74,699
+15,"  Bella palm ,  Neanthebella palm ,  Dwarf palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5518.jpg,4°C to 10°C,86,720
+16,"  Fabian Aralia ,  Red Aralia  ",Araliaceae,Aralia,  Asia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5714.jpg,-1°C to 10°C,88,662
+17,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5452.jpg,4°C to 10°C,64,621
+18,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5612.jpg,-1°C to 10°C,79,686
+19,"  Bird nest Anthurium ,  Cabbage Anthurium  ",Araceae,Anthurium,  Guyana  ,Tropical humid,[11],http://www.tropicopia.com/house-plant/thumbnails/5490.jpg,4°C to 10°C,74,741
+20,None,Bromeliaceae,Bromeliad,  Venezuela  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5782.jpg,-1°C to 10°C,75,689
+21,  Fish tail palm  ,Palmae,Palm,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5511.jpg,-1°C to 10°C,81,644
+22,  Bamboo palm  ,Arecaceae,Palm,  Honduras  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5521.jpg,-1°C to 10°C,79,716
+23,  Elephant ear  ,Araceae,Other,  Hybrid  ,Tropical humid,[11],http://www.tropicopia.com/house-plant/thumbnails/5488.jpg,4°C to 10°C,80,512
+24,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5735.jpg,-1°C to 10°C,63,623
+25,  Malaysian Dracaena  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5579.jpg,-1°C to 10°C,64,695
+26,"  Variegated Balfour aralia ,  Aralia Balfouriana  ",Araliaceae,Aralia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5710.jpg,-1°C to 10°C,68,653
+27,  Yellow Malaysian Dracaena  ,Liliaceae,Dracaena,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5581.jpg,-1°C to 10°C,62,593
+28,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5462.jpg,4°C to 10°C,85,573
+29,None,Araceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5646.jpg,-1°C to 10°C,75,662
+30,  Striped Dracaena  ,Liliaceae,Dracaena,  Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5563.jpg,-1°C to 10°C,84,754
+31,  Stiped calathea  ,Marantaceae,Foliage plant,  Cultivar  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5504.jpg,4°C to 10°C,87,587
+32,  Rose grape  ,Melastomataceae,Flower,  Philippines  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5660.jpg,-1°C to 10°C,61,696
+33,  Dumcane  ,Araceae,Dieffenbachia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5544.jpg,-1°C to 10°C,85,755
+34,  Willow Ficus  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5623.jpg,-1°C to 10°C,85,554
+35,  Janet Craig  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5554.jpg,-1°C to 10°C,69,696
+36,"  Parlor ivy ,  Sweetheart plant ,  Heartleaf philodendron ,  Cordatum vine  ",Araceae,Philodendron,  Central America  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5691.jpg,-1°C to 10°C,80,541
+37,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5449.jpg,4°C to 10°C,83,696
+38,  Elephant ear  ,Araceae,Other,  Cultivar  ,Tropical humid,[11],http://www.tropicopia.com/house-plant/thumbnails/5485.jpg,4°C to 10°C,79,595
+39,  False aralia  ,Araliaceae,Aralia,  New Calidonia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5752.jpg,-1°C to 10°C,90,726
+40,"  Bella palm ,  Neanthebella palm ,  Dwarf palm ,  Parlor palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5519.jpg,-1°C to 10°C,88,786
+41,"  Bamboo palm ,  Reed Palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5525.jpg,-1°C to 10°C,90,594
+42,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5550.jpg,-1°C to 10°C,61,683
+43,None,Apocynaceae,Flower,  Hybrid  ,Tropical,"[11,9]",http://www.tropicopia.com/house-plant/thumbnails/5656.jpg,-7°C to 10°C,63,774
+44,"  African evergreen ,  Arrowhead vine ,  Goosefoot plant  ",Araceae,Hanging,  Cultivar  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5773.jpg,-1°C to 10°C,67,513
+45,"  Christ-thorn ,  Crown of thorns  ",Euphorbiaceae,Cactus & Succulent,  Madagascar  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5602.jpg,-1°C to 10°C,76,771
+46,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5481.jpg,4°C to 10°C,85,511
+47,"  Spineless yucca ,  Palm lily  ",Liliaceae,Dracaena,  Mexico  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5788.jpg,-7°C to 10°C,63,579
+48,  Giant Candelabra tree  ,Euphorbiaceae,Cactus & Succulent,  South Africa  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5601.jpg,-1°C to 10°C,66,693
+49,  English ivy  ,Araliaceae,Hanging,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5639.jpg,-12°C to 10°C,62,495
+50,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5456.jpg,4°C to 10°C,68,605
+51,"  Areca palm ,  Butterfly palm  ",Arecaceae,Palm,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5587.jpg,-1°C to 10°C,82,635
+52,  Chinese hibiscus  ,Malvaceae,Flower,  Asia  ,Tropical,"[11,12]",http://www.tropicopia.com/house-plant/thumbnails/5645.jpg,4°C to 16°C,87,762
+53,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Taiwan  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5742.jpg,-1°C to 10°C,63,660
+54,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5620.jpg,-1°C to 10°C,76,507
+55,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5779.jpg,-1°C to 10°C,79,659
+56,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5747.jpg,-1°C to 10°C,72,731
+57,  Madagascar Palm  ,Apocynaceae,Cactus & Succulent,  Madagascar  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5674.jpg,-7°C to 10°C,70,547
+58,"  Cape mahogany ,  Christmas bells  ",Miliaceae,Other,  Zimbabwe  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5777.jpg,-1°C to 10°C,73,724
+59,  Golden Pothos  ,Araceae,Topiairy,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5592.jpg,-1°C to 10°C,81,777
+60,None,Araceae,Philodendron,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5694.jpg,-1°C to 10°C,84,706
+61,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,9]",http://www.tropicopia.com/house-plant/thumbnails/5604.jpg,-7°C to 10°C,76,611
+62,None,Araceae,Philodendron,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5696.jpg,-1°C to 10°C,79,752
+63,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5572.jpg,-1°C to 10°C,80,646
+64,"  Algerian ivy ,  Montgomery ivy  ",Araliaceae,Hanging,  Canaries  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5634.jpg,-12°C to 10°C,65,464
+65,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5473.jpg,4°C to 10°C,69,616
+66,  Umbella plant  ,Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5741.jpg,-1°C to 10°C,65,520
+67,  Malaysian Dracaena  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5578.jpg,-1°C to 10°C,79,510
+68,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5575.jpg,-1°C to 10°C,83,607
+69,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5479.jpg,4°C to 10°C,66,516
+70,  Fernleaf Philodendron  ,Araceae,Philodendron,  Venezuela  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5686.jpg,-1°C to 10°C,63,761
+71,"  Tailflower ,  Wax flower  ",Araceae,Anthurium,  Cultivar  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5492.jpg,4°C to 10°C,75,559
+72,  Zz plant  ,Araceae,Foliage plant,  South Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5789.jpg,-1°C to 10°C,85,795
+73,"  Variegated Balfour aralia ,  Aralia Balfouriana  ",Araliaceae,Aralia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5709.jpg,-1°C to 10°C,84,609
+74,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5475.jpg,4°C to 10°C,64,796
+75,"  Maindenhair ,  Delta maidenhair  ",Polypodiaceae,Fern,  Brazil  ,Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5437.jpg,-12°C to 4°C,75,629
+76,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5749.jpg,-1°C to 10°C,69,698
+77,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5576.jpg,-1°C to 10°C,74,642
+78,"  Baby rubber plant ,  Pepper face  ",Piperaceae,Other,  Venezuela  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5679.jpg,4°C to 10°C,63,771
+79,  Cornstalk plant  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5565.jpg,-1°C to 10°C,80,670
+80,  White bird of paradise  ,Strelitziaceae,Foliage plant,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5769.jpg,-7°C to 10°C,60,670
+81,  Burro-tail  ,Crasssulaceae,Hanging,  Mexico  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5756.jpg,-7°C to 10°C,60,685
+82,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5450.jpg,4°C to 10°C,63,542
+83,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5478.jpg,4°C to 10°C,85,712
+84,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5468.jpg,4°C to 10°C,80,723
+85,  Cornstalk plant  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5566.jpg,-1°C to 10°C,66,521
+86,  Chicken gizard aralia  ,Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5701.jpg,-1°C to 10°C,84,754
+87,  White bird of paradise  ,Strelitziaceae,Foliage plant,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5768.jpg,-7°C to 10°C,62,697
+88,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5781.jpg,-1°C to 10°C,83,523
+89,"  Variegated Balfour aralia ,  Aralia Balfouriana  ",Araliaceae,Aralia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5711.jpg,-1°C to 10°C,83,529
+90,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5549.jpg,-1°C to 10°C,87,765
+91,  Silver Calathea  ,Marantaceae,Foliage plant,  Cultivar  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5505.jpg,4°C to 10°C,68,591
+92," ""Snake s beard"" ",Liliaceae,Grass,  Japan  ,Subtropical,"[10, 7]",http://www.tropicopia.com/house-plant/thumbnails/5673.jpg,-18°C to 4°C,53,411
+93,  Burro-tail  ,Crasssulaceae,Hanging,  Mexico  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5757.jpg,-7°C to 10°C,83,548
+94,  Lacy tree-philodendron  ,Araceae,Philodendron,  Brazil  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5693.jpg,-1°C to 10°C,86,702
+95,"  English ivy ,  Variegated english ivy  ",Araliaceae,Hanging,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5641.jpg,-12°C to 10°C,61,413
+96,"  Elephant foot ,  Pony tail  ",Agavaceae,Foliage plant,  Mexico  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5670.jpg,-1°C to 10°C,69,517
+97,  Guzmania  ,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5628.jpg,-1°C to 10°C,67,746
+98,"  Kentia palm ,  Paradise palm  ",Arecaceae,Palm,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5650.jpg,-1°C to 10°C,74,592
+99,  Cast iron plant  ,Liliaceae,Foliage plant,  China  ,Subtropical,"[11, 7]",http://www.tropicopia.com/house-plant/thumbnails/5496.jpg,-18°C to 10°C,61,677
+100,"  Parlor ivy ,  Sweetheart plant ,  Heartleaf philodendron ,  Cordatum vine  ",Araceae,Philodendron,  Central America  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5690.jpg,-1°C to 10°C,80,678
+101,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5606.jpg,-1°C to 10°C,81,667
+102,None,Araceae,Philodendron,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5682.jpg,-1°C to 10°C,73,656
+103,"  Birdnest sansevieria ,  Snake plant  ",Liliaceae,Sansevieria,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5731.jpg,-1°C to 10°C,61,748
+104,"  Boston fern ,  Sword fern  ",Nephrolepidaceae,Fern,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5668.jpg,-1°C to 10°C,67,586
+105,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5546.jpg,-1°C to 10°C,76,503
+106,"  Kentia palm ,  Paradise palm  ",Arecaceae,Palm,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5648.jpg,-1°C to 10°C,73,779
+107,  Fish tail palm  ,Palmae,Palm,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5512.jpg,-1°C to 10°C,82,601
+108,  Striped Dracaena  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5553.jpg,-1°C to 10°C,86,580
+109,  Madagascar Palm  ,Apocynaceae,Cactus & Succulent,  Madagascar  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5675.jpg,-7°C to 10°C,79,510
+110,  Croton  ,Euphorbiaceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5530.jpg,-1°C to 10°C,69,785
+111,  Peace lily  ,Liliaceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,12]",http://www.tropicopia.com/house-plant/thumbnails/5766.jpg,4°C to 16°C,79,612
+112,  Umbella plant  ,Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5737.jpg,-1°C to 10°C,87,766
+113,  Grape Ivy  ,Vitaceae,Hanging,  Cultivar  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5529.jpg,-7°C to 10°C,69,586
+114,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5453.jpg,4°C to 10°C,71,663
+115,"  Miniature fishtail ,  Steel palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5523.jpg,-1°C to 10°C,84,516
+116,  Silver Lace Fern  ,Pteridaceae,Fern,  Asia  ,Tropical humid,"[10,9]",http://www.tropicopia.com/house-plant/thumbnails/5720.jpg,-7°C to 4°C,79,795
+117,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5615.jpg,-1°C to 10°C,88,660
+118,  Wax plant  ,Asclepiadaceae,Hanging,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5651.jpg,-1°C to 10°C,63,695
+119,"  Tailflower ,  Wax flower  ",Araceae,Anthurium,  Cultivar  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5493.jpg,4°C to 10°C,77,623
+120,"  Balfour aralia ,  Aralia Balfouriana  ",Araliaceae,Aralia,  Cultivar  ,Tropical,"[11,14]",http://www.tropicopia.com/house-plant/thumbnails/5708.jpg,4°C to 10°C,70,564
+121,  Croton  ,Euphorbiaceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5532.jpg,-1°C to 10°C,88,676
+122,  Bronze Anthurium  ,Araceae,Anthurium,  Ecuador  ,Tropical,[12],http://www.tropicopia.com/house-plant/thumbnails/5495.jpg,10°C to 16°C,82,593
+123,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5616.jpg,-1°C to 10°C,69,708
+124,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5577.jpg,-1°C to 10°C,60,563
+125,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5455.jpg,4°C to 10°C,78,791
+126,  Jade Plant  ,Crasssulaceae,Cactus & Succulent,  South Africa  ,Subtropical arid,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5536.jpg,-12°C to 10°C,56,404
+127,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5610.jpg,-1°C to 10°C,90,745
+128,"  Kentia palm ,  Paradise palm  ",Arecaceae,Palm,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5649.jpg,-1°C to 10°C,77,732
+129,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5454.jpg,4°C to 10°C,88,747
+130,  Chinese hibiscus  ,Malvaceae,Flower,  Asia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5643.jpg,-1°C to 10°C,65,754
+131,  Lady palm  ,Arecaceae,Palm,  China  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5724.jpg,-7°C to 10°C,64,546
+132,"  African evergreen ,  Arrowhead vine ,  Goosefoot plant  ",Araceae,Hanging,  Cultivar  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5772.jpg,-1°C to 10°C,85,507
+133,"  Dragon-tree Agave ,  Century plant  ",Amaryllidaceae,Cactus & Succulent,  Mexico  ,Arid Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5443.jpg,-12°C to 4°C,73,791
+134,"  Cast iron plant ,  Aspidistra Milky Way  ",Liliaceae,Foliage plant,  Japan  ,Subtropical,"[11, 7]",http://www.tropicopia.com/house-plant/thumbnails/5498.jpg,-18°C to 10°C,65,540
+135,  Pink quill  ,Bromeliaceae,Bromeliad,  Ecuador  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5776.jpg,-1°C to 10°C,90,753
+136,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5573.jpg,-1°C to 10°C,83,598
+137,"  Ming Aralia ,  Parsley panax  ",Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5706.jpg,-1°C to 10°C,89,615
+138,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5574.jpg,-1°C to 10°C,64,553
+139,  False aralia  ,Araliaceae,Aralia,  New Calidonia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5753.jpg,-1°C to 10°C,85,743
+140,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5458.jpg,4°C to 10°C,86,581
+141,  English ivy  ,Araliaceae,Hanging,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5640.jpg,-12°C to 10°C,57,496
+142,  Guzmania  ,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5630.jpg,-1°C to 10°C,84,664
+143,"  Korean rock fern ,  Tsu-sima holly fern  ",Dryopteridaceae,Fern,  Korea  ,Subtropical,"[10, 7]",http://www.tropicopia.com/house-plant/thumbnails/5717.jpg,-18°C to 4°C,58,601
+144,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5482.jpg,4°C to 10°C,62,735
+145,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5609.jpg,-1°C to 10°C,66,631
+146,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5607.jpg,-1°C to 10°C,70,533
+147,  Snake plant  ,Liliaceae,Sansevieria,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5736.jpg,-1°C to 10°C,77,526
+148,"  Picta Philodendron ,  Satin pothos , ""Devil s ivy"" ",Araceae,Hanging,  Indonisia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5754.jpg,-1°C to 10°C,73,609
+149,  Fish tail palm  ,Palmae,Palm,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5510.jpg,-1°C to 10°C,72,513
+150,"  Bamboo palm ,  Reed Palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5526.jpg,-1°C to 10°C,63,617
+151,  Janet Craig  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5558.jpg,-1°C to 10°C,71,786
+152,"  Miniature fishtail ,  Steel palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5522.jpg,-1°C to 10°C,73,779
+153,  Orchid cactus  ,Cactaceae,Cactus & Succulent,  Hybrid  ,Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5591.jpg,-7°C to 10°C,75,569
+154,"  Adonidia ,  Christmas palm ,  Manila palm  ",Arecaceae,Palm,  Philippines  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5778.jpg,-1°C to 10°C,67,638
+155,  Variegated lily-turf  ,Liliaceae,Foliage plant,  Japan  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5655.jpg,-12°C to 10°C,56,474
+156,  Janet Craig  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5557.jpg,-1°C to 10°C,69,799
+157,"  Splitleaf Philodendron ,  Mexican Breadfruit  ",Araceae,Philodendron,  Central America  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5662.jpg,-1°C to 10°C,80,515
+158,"  Elephant foot ,  Pony tail  ",Agavaceae,Foliage plant,  Mexico  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5672.jpg,-1°C to 10°C,74,566
+159,  Cretan brake  ,Pteridaceae,Fern,  Cultivar  ,Tropical humid,"[10,9]",http://www.tropicopia.com/house-plant/thumbnails/5719.jpg,-7°C to 4°C,72,541
+160,  Peace lily  ,Liliaceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5765.jpg,4°C to 10°C,86,565
+161,  Silver vase  ,Bromeliaceae,Bromeliad,  Brazil  ,Tropical humid,[10],http://www.tropicopia.com/house-plant/thumbnails/5438.jpg,-1°C to 4°C,85,618
+162,"  African fern pine ,  Buddhist pine  ",Podocarpaceae,Foliage plant,  Central Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5699.jpg,-7°C to 10°C,62,699
+163,  Indian kale  ,Araceae,Foliage plant,  Colombia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5785.jpg,-1°C to 10°C,72,532
+164,  English ivy  ,Araliaceae,Hanging,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5638.jpg,-12°C to 10°C,60,467
+165,  Fidleleaf fig  ,Moraceae,Ficus,  Ouest Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5622.jpg,-1°C to 10°C,90,597
+166,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5618.jpg,-1°C to 10°C,82,583
+167,  Japanese Aralia  ,Araliaceae,Aralia,  Japan  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5603.jpg,-12°C to 10°C,65,442
+168,"  Miniature fishtail ,  Steel palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5524.jpg,-1°C to 10°C,90,576
+169,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5459.jpg,4°C to 10°C,67,674
+170,"  Variegated Carabbean Agave ,  Century plant  ",Amaryllidaceae,Cactus & Succulent,  India  ,Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5442.jpg,-12°C to 4°C,82,515
+171,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5464.jpg,4°C to 10°C,76,687
+172,  Elephant ear  ,Araceae,Other,  Hybrid  ,Tropical humid,[11],http://www.tropicopia.com/house-plant/thumbnails/5487.jpg,4°C to 10°C,89,557
+173,  Staghorn fern  ,Polypodiaceae,Fern,  Australia  ,Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5698.jpg,-7°C to 10°C,84,504
+174,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5763.jpg,-1°C to 10°C,63,701
+175,"  Variegated Balfour aralia ,  Aralia Balfouriana  ",Araliaceae,Aralia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5712.jpg,-1°C to 10°C,81,519
+176,  Grass tree  ,Liliaceae,Other,  Australia  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5783.jpg,-7°C to 10°C,80,743
+177,  Cast iron plant  ,Liliaceae,Foliage plant,  China  ,Subtropical,"[11, 7]",http://www.tropicopia.com/house-plant/thumbnails/5497.jpg,-18°C to 10°C,69,507
+178,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Taiwan  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5744.jpg,-1°C to 10°C,61,590
+179,  Guzmania  ,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5627.jpg,-1°C to 10°C,64,578
+180,  Lipstick  ,Gesneriaceae,Hanging,  Java  ,Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5441.jpg,-7°C to 10°C,83,790
+181,  Lady palm  ,Arecaceae,Palm,  China  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5723.jpg,-7°C to 10°C,59,437
+182,  Velvet-leaf vine  ,Araceae,Philodendron,  Dominica  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5684.jpg,-1°C to 10°C,71,636
+183,  Guzmania  ,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5629.jpg,-1°C to 10°C,90,598
+184,None,Orchidaceae,Flower,  Hybrid  ,Tropical humid,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5680.jpg,4°C to 10°C,61,698
+185,  Rose grape  ,Melastomataceae,Flower,  Philippines  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5659.jpg,4°C to 10°C,75,558
+186,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5469.jpg,4°C to 10°C,85,603
+187,  Striped Dracaena  ,Liliaceae,Dracaena,  Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5562.jpg,-1°C to 10°C,60,737
+188,  Zz plant  ,Araceae,Foliage plant,  South Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5790.jpg,-1°C to 10°C,70,606
+189,  Creeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5626.jpg,-1°C to 10°C,89,601
+190,  Spindle palm  ,Arecaceae,Palm,  Rodrigue Island  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5653.jpg,4°C to 10°C,74,662
+191,  Willow Ficus  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5624.jpg,-1°C to 10°C,63,624
+192,  Fernleaf Philodendron  ,Araceae,Philodendron,  Venezuela  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5688.jpg,-1°C to 10°C,89,513
+193,"  African evergreen ,  Arrowhead vine ,  Goosefoot plant  ",Araceae,Hanging,  Cultivar  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5771.jpg,-1°C to 10°C,79,620
+194,  Golden Barrel  ,Cactaceae,Cactus & Succulent,  Central Mexico  ,Arid Tropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5590.jpg,-12°C to 10°C,83,719
+195,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5571.jpg,-1°C to 10°C,65,786
+196,  Parrot palm  ,Arecaceae,Palm,  Brazil  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5770.jpg,-1°C to 10°C,75,746
+197,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,9]",http://www.tropicopia.com/house-plant/thumbnails/5611.jpg,-7°C to 10°C,61,524
+198,"  Bower plant ,  Bower of beauty  ",Bignoniaceae,Flower,  Australia  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5676.jpg,-7°C to 10°C,67,695
+199,  Spindle palm  ,Arecaceae,Palm,  Rodrigue Island  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5652.jpg,-1°C to 10°C,80,685
+200,  Stromante  ,Marantaceae,Foliage plant,  Brazil  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5508.jpg,4°C to 10°C,84,551
+201,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5461.jpg,4°C to 10°C,72,749
+202,  Yellow Malaysian Dracaena  ,Liliaceae,Dracaena,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5582.jpg,-1°C to 10°C,76,739
+203,"  Ming Aralia ,  Parsley panax  ",Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5705.jpg,-1°C to 10°C,79,633
+204,  Holly-fern  ,Dryopteridaceae,Fern,  Asia  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5541.jpg,-12°C to 10°C,51,412
+205,None,Sinopteridaceae,Fern,"  Australia ,  New Guinea  ",Tropical,"[10,11]",http://www.tropicopia.com/house-plant/thumbnails/5677.jpg,-1°C to 10°C,70,661
+206,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5729.jpg,-7°C to 10°C,68,630
+207,  Fernleaf Philodendron  ,Araceae,Philodendron,  Venezuela  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5687.jpg,-1°C to 10°C,60,507
+208,  Grape Ivy  ,Vitaceae,Hanging,"  Central America ,  South America  ",Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5528.jpg,-1°C to 10°C,89,576
+209,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5614.jpg,-1°C to 10°C,60,798
+210,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5448.jpg,4°C to 10°C,88,621
+211,"  Boston fern ,  Sword fern  ",Nephrolepidaceae,Fern,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5666.jpg,-1°C to 10°C,61,721
+212,  Phrynium  ,Marantaceae,Foliage plant,  Brazil  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5538.jpg,-1°C to 10°C,68,679
+213,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5467.jpg,4°C to 10°C,68,529
+214,None,Euphorbiaceae,Cactus & Succulent,  Guinea  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5599.jpg,-1°C to 10°C,72,617
+215,  Tree-Cereus  ,Cactaceae,Cactus & Succulent,  Brazil  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5513.jpg,-7°C to 10°C,69,759
+216,  Yellow Malaysian Dracaena  ,Liliaceae,Dracaena,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5583.jpg,-1°C to 10°C,87,629
+217,  Chicken gizard aralia  ,Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5700.jpg,-1°C to 10°C,60,525
+218,"  Fabian Aralia ,  Red Aralia  ",Araliaceae,Aralia,  Asia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5713.jpg,-1°C to 10°C,78,742
+219,"  Bougainvillia ,  Paper flower  ",Nyctaginaceae,Flower,  Cultivar  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5501.jpg,4°C to 10°C,71,536
+220,"  Green prayer plant ,  Herringbone  ",Marantaceae,Hanging,  Brazil  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5658.jpg,-1°C to 10°C,61,572
+221,  Golden Pothos  ,Araceae,Topiairy,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5595.jpg,-1°C to 10°C,63,509
+222,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5471.jpg,4°C to 10°C,83,637
+223,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5463.jpg,4°C to 10°C,65,598
+224,  Tree-Cereus  ,Cactaceae,Cactus & Succulent,  Brazil  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5514.jpg,-7°C to 10°C,90,597
+225,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5457.jpg,4°C to 10°C,86,761
+226,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5547.jpg,-1°C to 10°C,81,502
+227,"  Dwarf bouquet ,  Calypso Queen  ",Liliaceae,Dracaena,,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5559.jpg,-1°C to 10°C,61,690
+228,None,Euphorbiaceae,Cactus & Succulent,  Guinea  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5600.jpg,-1°C to 10°C,68,562
+229,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5551.jpg,-1°C to 10°C,84,796
+230,  Spiny licuala palm  ,Arecaceae,Palm,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5654.jpg,-1°C to 10°C,63,724
+231,  Croton  ,Euphorbiaceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5531.jpg,-1°C to 10°C,72,631
+232,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5760.jpg,-1°C to 10°C,61,508
+233,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5447.jpg,4°C to 10°C,64,724
+234,  Guzmania  ,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5631.jpg,-1°C to 10°C,65,553
+235,  Lacy tree-philodendron  ,Araceae,Philodendron,  Brazil  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5692.jpg,-1°C to 10°C,80,693
+236,"  Fabian Aralia ,  Red Aralia  ",Araliaceae,Aralia,  Asia  ,Tropical,"[11,21]",http://www.tropicopia.com/house-plant/thumbnails/5715.jpg,4°C to 10°C,82,743
+237,  English ivy  ,Araliaceae,Topiairy,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5637.jpg,-12°C to 10°C,52,535
+238,  White Pothos  ,Araceae,Hanging,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5596.jpg,-1°C to 10°C,62,556
+239,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5483.jpg,4°C to 10°C,79,795
+240,"  Splitleaf Philodendron ,  Mexican Breadfruit  ",Araceae,Philodendron,  Central America  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5661.jpg,-1°C to 10°C,90,732
+241,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5764.jpg,-1°C to 10°C,78,668
+242,  Umbella plant  ,Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5738.jpg,-1°C to 10°C,80,584
+243,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5748.jpg,4°C to 10°C,66,654
+244,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5605.jpg,-1°C to 10°C,90,791
+245,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5613.jpg,-1°C to 10°C,75,558
+246," ""Rabbit s foot"", ""Squirrel s foot"" ",Davalliaceae,Fern,  Canaries  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5542.jpg,-1°C to 10°C,85,781
+247,"  Spineless yucca ,  Palm lily  ",Liliaceae,Dracaena,  Mexico  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5787.jpg,-7°C to 10°C,51,583
+248,  Croton  ,Euphorbiaceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5533.jpg,-1°C to 10°C,70,693
+249,  Lisa Dracaena  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5561.jpg,-1°C to 10°C,61,720
+250,"  Bella palm ,  Neanthebella palm ,  Dwarf palm ,  Parlor palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5517.jpg,-1°C to 10°C,87,534
+251,"  Rosy Maidenhair ,  Autralian maidenhair  ",Polypodiaceae,Fern,"  Australia ,  New Guinea  ",Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5436.jpg,-12°C to 4°C,62,754
+252,  Yellow Malaysian Dracaena  ,Liliaceae,Dracaena,  India  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5580.jpg,-1°C to 10°C,86,767
+253,  Majesty palm  ,Arecaceae,Palm,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5722.jpg,-1°C to 10°C,80,627
+254,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5664.jpg,-1°C to 10°C,67,585
+255,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5451.jpg,4°C to 10°C,66,609
+256,  Umbella plant  ,Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5740.jpg,-1°C to 10°C,89,780
+257,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5472.jpg,4°C to 10°C,74,747
+258,  Lady palm  ,Arecaceae,Palm,  China  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5821.jpg,-7°C to 10°C,66,433
+259,"  Algerian ivy ,  Montgomery ivy  ",Araliaceae,Hanging,  Canaries  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5633.jpg,-12°C to 10°C,69,662
+260,  Cornstalk plant  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5567.jpg,-1°C to 10°C,63,757
+261,  Weeping fig  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,9]",http://www.tropicopia.com/house-plant/thumbnails/5608.jpg,-7°C to 10°C,81,571
+262,  Red Philodendron  ,Araceae,Philodendron,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5683.jpg,-1°C to 10°C,68,698
+263,None,Orchidaceae,Flower,  Hybrid  ,Tropical humid,"[11,12]",http://www.tropicopia.com/house-plant/thumbnails/5681.jpg,4°C to 16°C,63,657
+264,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5734.jpg,-1°C to 10°C,81,656
+265,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Taiwan  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5746.jpg,4°C to 10°C,70,634
+266,"  Bougainvillia ,  Paper flower  ",Nyctaginaceae,Flower,  Cultivar  ,Tropical,[13],http://www.tropicopia.com/house-plant/thumbnails/5503.jpg,16°C to 21°C,78,685
+267,"  Spineless yucca ,  Palm lily  ",Liliaceae,Dracaena,  Mexico  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5786.jpg,-7°C to 10°C,61,471
+268,  Phrynium  ,Marantaceae,Foliage plant,  Brazil  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5539.jpg,-1°C to 10°C,85,777
+269,  Dumcane  ,Araceae,Dieffenbachia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5545.jpg,-1°C to 10°C,67,759
+270,"  Ming Aralia ,  Parsley panax  ",Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,9]",http://www.tropicopia.com/house-plant/thumbnails/5703.jpg,-7°C to 10°C,87,613
+271,None,Bromeliaceae,Bromeliad,  Hybrid  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5775.jpg,-1°C to 10°C,72,537
+272,"  Parlor ivy ,  Sweetheart plant ,  Heartleaf philodendron ,  Cordatum vine  ",Araceae,Philodendron,  Central America  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5689.jpg,-1°C to 10°C,66,511
+273,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5761.jpg,-1°C to 10°C,68,617
+274,  Cornstalk plant  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5568.jpg,-1°C to 10°C,84,694
+275,  Spider plant  ,Liliaceae,Hanging,  Central Africa  ,Tropical to subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5527.jpg,-7°C to 10°C,64,540
+276,  Lime philodendron  ,Araceae,Philodendron,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5685.jpg,-1°C to 10°C,66,746
+277,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5569.jpg,-1°C to 10°C,76,664
+278,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5762.jpg,4°C to 10°C,77,540
+279,  Malaysian Dracaena  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5584.jpg,-1°C to 10°C,65,568
+280,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5537.jpg,-1°C to 10°C,73,551
+281,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5732.jpg,-1°C to 10°C,65,687
+282,  Monster cactus  ,Cactaceae,Cactus & Succulent,  Brazil  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5516.jpg,-7°C to 10°C,60,775
+283,  Peace lily  ,Araceae,Spathiphyllum,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5759.jpg,-1°C to 10°C,74,793
+284,None,Araceae,Philodendron,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5695.jpg,-1°C to 10°C,83,753
+285,  Burro-tail  ,Crasssulaceae,Ground Cover,  Mexico  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5755.jpg,-7°C to 10°C,77,702
+286,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5619.jpg,-1°C to 10°C,70,627
+287,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5780.jpg,-1°C to 10°C,65,696
+288,  Coral berry  ,Bromeliaceae,Bromeliad,  Brazil  ,Subtropical,[10],http://www.tropicopia.com/house-plant/thumbnails/5439.jpg,-1°C to 4°C,52,604
+289,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5663.jpg,-1°C to 10°C,79,634
+290,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Taiwan  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5743.jpg,-1°C to 10°C,64,790
+291,  Silver vase  ,Bromeliaceae,Bromeliad,  Hybrid  ,Tropical humid,[10],http://www.tropicopia.com/house-plant/thumbnails/5440.jpg,-1°C to 4°C,84,722
+292,  China doll  ,Bignoniaceae,Other,  China  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5721.jpg,-7°C to 10°C,57,615
+293,  Fidleleaf fig  ,Moraceae,Ficus,  Ouest Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5621.jpg,-1°C to 10°C,88,640
+294,  Grass tree  ,Liliaceae,Other,  Australia  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5784.jpg,-7°C to 10°C,86,521
+295,  White Pothos  ,Araceae,Hanging,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5597.jpg,-1°C to 10°C,60,790
+296,  Striped Dracaena  ,Liliaceae,Dracaena,  Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5564.jpg,-1°C to 10°C,71,631
+297,"  Areca palm ,  Butterfly palm  ",Arecaceae,Palm,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5588.jpg,-1°C to 10°C,79,595
+298,  Striped Dracaena  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5560.jpg,-1°C to 10°C,72,794
+299,"  Bird nest Anthurium ,  Cabbage Anthurium  ",Araceae,Anthurium,  Costa rica  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5494.jpg,4°C to 10°C,80,737
+300,  Golden Pothos  ,Araceae,Hanging,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5594.jpg,-1°C to 10°C,78,512
+301,"  Miniature treefern ,  Dwarf treefern  ",Polypodiaceae,Fern,  New Calidonia  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5500.jpg,-1°C to 10°C,64,548
+302,"  Yellow Hawaiian elf ,  Yellow parasol plant  ",Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5751.jpg,-1°C to 10°C,84,719
+303,"  Areca palm ,  Butterfly palm  ",Arecaceae,Palm,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5589.jpg,-1°C to 10°C,71,750
+304,  Tree Maindenhair fern  ,Dryopteridaceae,Fern,,Tropical humid,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5543.jpg,-7°C to 10°C,76,547
+305,  Umbella plant  ,Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5739.jpg,-1°C to 10°C,85,745
+306,  English ivy  ,Araliaceae,Topiairy,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5636.jpg,-12°C to 10°C,56,608
+307,  English ivy  ,Araliaceae,Topiairy,  Cultivar  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5635.jpg,-12°C to 10°C,55,552
+308,"  Buttrefly Ginger ,  White Ginger  ",Zingiberaceae,Flower,  China  ,Subtropical,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5642.jpg,-12°C to 10°C,57,509
+309,"  Paper Flower ,  Bougainvillia  ",Nyctaginaceae,Flower,  Cultivar  ,Tropical,[10],http://www.tropicopia.com/house-plant/thumbnails/5502.jpg,-1°C to 4°C,79,568
+310,  Golden Trumpet  ,Apocynaceae,Flower,  Brazil  ,Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5484.jpg,-7°C to 10°C,62,571
+311,  Birdnest fern  ,Aspleniaceae,Fern,  Asia  ,Tropical humid,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5499.jpg,-1°C to 10°C,80,695
+312,  Tricolor Peperomia  ,Piperaceae,Other,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5678.jpg,-1°C to 10°C,62,566
+313,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5730.jpg,-7°C to 10°C,52,647
+314,None,Araceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5647.jpg,-1°C to 10°C,78,718
+315,  Janet Craig  ,Liliaceae,Dracaena,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5555.jpg,-1°C to 10°C,67,529
+316,"  Balfour aralia ,  Aralia Balfouriana  ",Araliaceae,Aralia,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5707.jpg,-1°C to 10°C,78,693
+317,  Velvet Calathea  ,Marantaceae,Foliage plant,  Brazil  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5507.jpg,4°C to 10°C,63,754
+318,  Madagascar dragon tree  ,Liliaceae,Dracaena,  Madagascar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5570.jpg,-1°C to 10°C,75,675
+319,  Tree-Cereus  ,Cactaceae,Cactus & Succulent,  Brazil  ,Arid Tropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5515.jpg,-7°C to 10°C,89,754
+320,"  Elephant foot ,  Pony tail  ",Agavaceae,Foliage plant,  Mexico  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5671.jpg,-1°C to 10°C,83,688
+321,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Taiwan  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5745.jpg,-1°C to 10°C,82,771
+322,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5548.jpg,-1°C to 10°C,84,646
+323,  Variegated Euphorbia  ,Euphorbiaceae,Cactus & Succulent,  Africa  ,Arid Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5598.jpg,-1°C to 10°C,70,590
+324,  Chinese hibiscus  ,Malvaceae,Flower,  Asia  ,Tropical,"[11,11]",http://www.tropicopia.com/house-plant/thumbnails/5644.jpg,4°C to 10°C,73,749
+325,"  Boston fern ,  Sword fern  ",Nephrolepidaceae,Fern,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5667.jpg,-1°C to 10°C,88,658
+326,  Silver Ribbon Fern  ,Pteridaceae,Fern,  Cultivar  ,Tropical humid,"[10,9]",http://www.tropicopia.com/house-plant/thumbnails/5718.jpg,-7°C to 4°C,84,654
+327,  White bird of paradise  ,Strelitziaceae,Foliage plant,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5767.jpg,-7°C to 10°C,52,638
+328,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5460.jpg,4°C to 10°C,60,636
+329,"  Hawaiian elf ,  Parasol plant  ",Araliaceae,Schefflera,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5750.jpg,-1°C to 10°C,84,751
+330,  Croton  ,Euphorbiaceae,Foliage plant,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5534.jpg,-1°C to 10°C,83,596
+331,None,Bromeliaceae,Bromeliad,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5665.jpg,-1°C to 10°C,65,629
+332,"  Sago palm ,  King sago  ",Cycadaceae,Palm,  Japan  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5540.jpg,-7°C to 10°C,69,594
+333,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5733.jpg,-1°C to 10°C,77,679
+334,  Jade Plant  ,Crasssulaceae,Cactus & Succulent,  South Africa  ,Subtropical arid,"[11, 8]",http://www.tropicopia.com/house-plant/thumbnails/5535.jpg,-12°C to 10°C,56,425
+335,  Pignee Date palm  ,Palmae,Palm,  Vietnam  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5697.jpg,-1°C to 10°C,86,586
+336,"  Lilliput Agave ,  Century plant  ",Amaryllidaceae,Cactus & Succulent,  Mexico  ,Arid Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5445.jpg,-12°C to 4°C,87,503
+337,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5465.jpg,4°C to 10°C,90,705
+338,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5727.jpg,-7°C to 10°C,51,549
+339,"  Bella palm ,  Neanthebella palm ,  Dwarf palm ,  Parlor palm  ",Arecaceae,Palm,  Mexico  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5520.jpg,-1°C to 10°C,74,570
+340,  Snake plant  ,Liliaceae,Sansevieria,  South Africa  ,Subtropical,"[11, 9]",http://www.tropicopia.com/house-plant/thumbnails/5728.jpg,-7°C to 10°C,66,556
+341,  Dumcane  ,Araceae,Dieffenbachia,  Hybrid  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5552.jpg,-1°C to 10°C,68,517
+342,  Medallion Calathea  ,Marantaceae,Foliage plant,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5509.jpg,4°C to 10°C,82,566
+343,  Japanese tassel fern  ,Dryopteridaceae,Fern,  Japan  ,Subtropical,"[10, 6]",http://www.tropicopia.com/house-plant/thumbnails/5716.jpg,-23°C to 4°C,52,534
+344,  Willow fig tree  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,9]",http://www.tropicopia.com/house-plant/thumbnails/5625.jpg,-7°C to 10°C,71,662
+345,"  Ming Aralia ,  Parsley panax  ",Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5704.jpg,-1°C to 10°C,62,617
+346,  Golden Pothos  ,Araceae,Hanging,  South Pacific  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5593.jpg,-1°C to 10°C,68,520
+347,"  Thread Agave ,  Century plant  ",Amaryllidaceae,Cactus & Succulent,  Mexico  ,Arid Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5444.jpg,-12°C to 4°C,85,570
+348,  Chicken gizard aralia  ,Araliaceae,Aralia,  Malaysia  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5702.jpg,-1°C to 10°C,76,531
+349,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5476.jpg,4°C to 10°C,66,506
+350,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5470.jpg,4°C to 10°C,69,740
+351,  Chinese Evergreen  ,Araceae,Aglaonema,  Hybrid  ,Tropical,[11],http://www.tropicopia.com/house-plant/thumbnails/5474.jpg,4°C to 10°C,90,697
+352,  Silver Calathea  ,Marantaceae,Foliage plant,  Cultivar  ,Tropical,[12],http://www.tropicopia.com/house-plant/thumbnails/5506.jpg,10°C to 16°C,71,566
+353,  Rubber plant  ,Moraceae,Ficus,  Cultivar  ,Tropical,"[11,10]",http://www.tropicopia.com/house-plant/thumbnails/5617.jpg,-1°C to 10°C,73,737
+354,"  Blue Agave ,  Century plant  ",Amaryllidaceae,Cactus & Succulent,  Mexico  ,Arid Tropical,"[10, 8]",http://www.tropicopia.com/house-plant/thumbnails/5446.jpg,-12°C to 4°C,81,746
